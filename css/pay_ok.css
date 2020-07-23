@@ -1,80 +1,258 @@
-@import url(common_ys.css);
+@import url(common-hn.css);
 
-main{}
+main {}
 
 
-.pay_ok{
-    width:1080px;
-    margin:0 auto;
+.pay_ok {
+    width: 1080px;
+    margin: 0 auto;
     margin-bottom: 100px;
 }
 
-.pay_content{
+.pay_content {
     text-align: center;
-    border-bottom:5px double #ededed;
+    border-bottom: 5px double #ededed;
     margin-bottom: 55px;
 }
-.pay_content h1{
-    font-size:20px;
-    margin:30px auto;
+
+.pay_content h1 {
+    font-size: 20px;
+    margin: 30px auto;
 }
-.pay_content a{
+
+.pay_content a {
     text-decoration: none;
-    color:#fff;
-    background:#AD74CE;
-    display:inline-block;
-    padding:7px 36px;
+    color: #fff;
+    background: #AD74CE;
+    display: inline-block;
+    padding: 7px 36px;
     border-radius: 10px;
     margin-bottom: 55px;
 }
 
 
 /*주문자 정보*/
-.pay_order_info{
+.pay_order_info {
     border-bottom: 1px solid #ededed;
     margin-bottom: 40px;
 }
-.pay_order_info h2{
+
+.pay_order_info h2 {
     text-align: center;
-    font-size:20px;
+    font-size: 20px;
 }
 
-.pay_order_flex{
-    display:flex;
+.pay_order_flex {
+    display: flex;
     justify-content: space-around;
-    margin-top:25px;
+    margin-top: 25px;
     margin-bottom: 40px;
 }
 
-.order_label{
+.order_label {
     text-align: right;
 }
-.order_label p{
-}
-.order_info{}
-.order_info p{}
+
+.order_label p {}
+
+.order_info {}
+
+.order_info p {}
 
 
 /*결제정보*/
-.pay_info{
-    border-bottom:5px double #ededed;
-}
-.pay_info h3{
-    text-align: center;
-    font-size:20px;
+.pay_info {
+    border-bottom: 5px double #ededed;
 }
 
-.pay_info_flex{
-    display:flex;
+.pay_info h3 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.pay_info_flex {
+    display: flex;
     justify-content: space-around;
-    margin-top:25px;
+    margin-top: 25px;
     margin-bottom: 55px;
 }
 
-.info_label{
+.info_label {
     text-align: right;
 }
-.info_label p{}
 
-.info_in{}
-.info_in p{}
+.info_label p {}
+
+.info_in {}
+
+.info_in p {}
+
+/*---------모바일 480----------*/
+
+
+@media (max-width:480px) {
+    header {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .hailli {}
+
+    header .hailli .gnb {
+        float: left;
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    header .hailli .gnb a {
+        padding: 0 10px;
+    }
+
+    header .hailli h1 {
+        font-size: 2em;
+        clear: both;
+    }
+
+    header nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+
+        display: flex;
+        align-items: center;
+        transform: translateX(100%);
+        transition: .5s;
+        z-index: 1;
+    }
+
+    header nav.active {
+        transform: translateX(0%);
+    }
+
+    header .hailli nav {
+        width: 30%;
+
+        display: block;
+        text-align: center
+    }
+
+    header .hailli nav a {
+        top: 10%;
+
+        font-size: 12px;
+        color: #fff;
+        display: block;
+    }
+
+    .menu-trigger {
+        display: block;
+        z-index: 2;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .pay_ok {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+
+    .pay_content {
+        padding-top: 10%;
+        text-align: center;
+        border-bottom: 5px double #ededed;
+        margin-bottom: 55px;
+    }
+
+    .pay_content h1 {
+        font-size: 15px;
+        margin: 30px auto;
+    }
+
+    .pay_content a {
+        text-decoration: none;
+        color: #fff;
+        background: #AD74CE;
+        display: inline-block;
+        padding: 7px 36px;
+        border-radius: 10px;
+        margin-bottom: 55px;
+    }
+
+
+    /*주문자 정보*/
+    .pay_order_info {
+        border-bottom: 1px solid #ededed;
+        margin-bottom: 40px;
+    }
+
+    .pay_order_info h2 {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .pay_order_flex {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 25px;
+        margin-bottom: 40px;
+
+        font-size: 12px;
+    }
+
+    .order_label {
+        text-align: right;
+    }
+
+    .order_label p {}
+
+    .order_info {}
+
+    .order_info p {}
+
+
+    /*결제정보*/
+    .pay_info {
+        border-bottom: 5px double #ededed;
+    }
+
+    .pay_info h3 {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .pay_info_flex {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 25px;
+        margin-bottom: 55px;
+
+        font-size: 12px;
+    }
+
+    .info_label {
+        text-align: right;
+    }
+
+    .info_label p {}
+
+    .info_in {}
+
+    .info_in p {}
+
+    .footer {}
+
+    .h_f {}
+
+    .h_f p {
+        font-size: 14px;
+    }
+
+    .h_f div {}
+}

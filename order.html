@@ -2,80 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>cafe. HAILLI </title>
-
-
+    <title>Cafe__HAILLI</title>
     <link rel="stylesheet" href="css/order.css" type="text/css">
-
-    <link rel="icon" href="img/favi.ico">
+    <link rel="icon" href="img/cake.png">
 
 </head>
 
 <body>
 
+    <!-----헤더고정----->
     <header>
-        <article>
-            <h1>
-                <a href="">
-                    <img src="img/HAILLI.png" alt="">
-                </a>
-            </h1>
+        <div class="hailli">
+            <div class="gnb">
+                <a href="login.html">로그인</a>
+                <a href="member1.html">MY페이지</a>
+                <a href="qna.html">1 : 1문의</a>
+            </div>
+            <a href="index.html">
+                <h1>〈HAILLI〉</h1>
+            </a>
+            <nav>
+                <a href="cafe.html">카페소개</a>
+                <a href="reservation.html">예약하기</a>
+                <a href="review.html">이용후기</a>
+                <a href="notice.html">공지사항</a>
+                <a href=road.html>오시는길</a>
+            </nav>
 
-            <ul>
-                <li>
-                    <a href="login.html">로그인</a>
-                <li>
-                    <a href="member.html">MY 페이지</a>
-                </li>
-                <li>
-                    <a href="qna_none.html">1 : 1 문의</a>
-                </li>
-            </ul>
-        </article>
-
-        <nav>
-            <ul>
-                <li>
-                    <a href="">
-                        카페소개
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        예약하기
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        이용후기
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        공지사항
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        오시는길
-                    </a>
-                </li>
-            </ul>
-        </nav>
+            <a class="menu-trigger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
     </header>
+
+    <script>
+        const menu =
+            document.querySelector('.menu-trigger');
+        const nav = document.querySelector('nav');
+
+        menu.addEventListener('click', function() {
+            menu.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+    </script>
 
     <main>
         <div class="member">
             <div class="menu">
-                <h2>MY 페이지</h2>
+                <h1>MY 페이지</h1>
                 <ul>
                     <li>
-                        <a href="member.html">회원정보</a>
+                        <a href="member1.html">회원정보</a>
                     </li>
                     <li>
                         <a href="cart_none.html">장바구니</a>
@@ -89,9 +70,9 @@
             <div class="order">
                 <h2>주문내역</h2>
                 <div class="order_list">
-                  <span>
-                      총 1건
-                  </span>
+                    <span>
+                        총 1건
+                    </span>
                     <table class="order_table">
 
                         <thead>
@@ -108,13 +89,13 @@
                                     <input type="checkbox" name="choice" value="choice">
                                 </td>
                                 <td>
-                                    <img src="img/19.jpg" alt="">
+                                    <img src="img/cake's/mini.jpg" alt="">
                                     <a href="">하트 시트 케이크
                                         33,000원 / 1개
                                         <small>입금완료</small></a>
                                 </td>
                                 <td>
-                                    <p>사이즈: 1호(24000원), 레터링: 우리 사이 오래오래, 방문날짜: 2020-08-20 방문시간: am 11:00, 요청사항: 이쁘게 잘 만들어주세요!</p>
+                                    <p>사이즈: 1호(24000원), 레터링: ♥생일 축하해♥, 방문날짜: 2020-08-20 방문시간: am 11:00, 요청사항: 이쁘게 잘 만들어주세요!</p>
                                 </td>
                                 <td>
                                     <p>2020. 06. 30 am 11: 15
@@ -124,13 +105,13 @@
                         </tbody>
                     </table>
 
-                       <p> <select name="more" id="">
+                    <p> <select name="more" id="">
                             <option value="">전체내역 보기</option>
                             <option value="">최신순</option>
                             <option value="">
                                 이름순
                             </option>
-                    </select>
+                        </select>
                     </p>
                     <div class="paging">
                         <a href="">&lt</a>
@@ -138,33 +119,32 @@
                         <a href="">2</a>
                         <a href="">3</a>
                         <a href="">&gt</a>
-                        
-                        
+
+
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
+    <!-----풋바고정----->
     <footer>
-        <div class="footer">
+        <div class="h_f">
             <p>업체명 : 하일리
                 사업자 등록번호 : 784-18-00928 사업주 : 최윤혁
                 주소 : 서울시 강동구 성내로3길 18
-                전화번호 : 070-8775-0010
-            </p>
-            <ul>
-                <li>
-                    <a href="">
-                        <img src="img/icon_insta.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="img/icon_kakao.png" alt="">
-                    </a>
-                </li>
-            </ul>
+                전화번호 : 070-8775-0010</p>
+            <div>
+                <a href="https://www.instagram.com/cafe__hailli/" target="_blank">
+                    <img src="img/instagram-fill.png">
+                </a>
+
+                <a href="https://pf.kakao.com/_xdfxmgT" target="_blank">
+                    <img src="img/kakao-talk-fill.png">
+                </a>
+            </div>
         </div>
     </footer>
+    <!-----풋바 끝----->
+
 </body></html>

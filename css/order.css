@@ -1,4 +1,4 @@
-@import url(common_ys.css);
+@import url(common-hn.css);
 
 main {
     margin: 0 auto;
@@ -53,7 +53,7 @@ main {
 .order {
     margin: 40px auto;
     padding: 0 50px;
-    width:80%;
+    width: 80%;
 }
 
 .order h2 {
@@ -63,15 +63,16 @@ main {
 }
 
 .order_list {}
-.order_list span{
-    padding:5px 10px;
+
+.order_list span {
+    padding: 5px 10px;
 }
 
 
 .order_table {
     border-spacing: 0;
     border-radius: 10px;
-    margin-top:5px;
+    margin-top: 5px;
     width: 100%;
 }
 
@@ -124,8 +125,9 @@ main {
     color: #333;
     white-space: pre-line;
 }
-order_table tbody td a small{
-    color:#666;
+
+order_table tbody td a small {
+    color: #666;
 }
 
 .order_table tbody td p {
@@ -152,12 +154,13 @@ order_table tbody td a small{
     text-overflow: ellipsis;
     line-height: 1.5;
 }
-.order_table tbody td:nth-of-type(4){
+
+.order_table tbody td:nth-of-type(4) {
     text-align: center;
 }
 
 .order_list > p {
-    margin-top:5px;
+    margin-top: 5px;
     text-align: right;
 }
 
@@ -165,18 +168,21 @@ order_table tbody td a small{
     border: 1px solid #ededed;
     border-radius: 10px;
     padding: 3px 10px;
+    
 }
 
 .sel select option {}
 
-.paging{
+.paging {
     text-align: center;
-    margin-top:40px;
+    margin-top: 40px;
 }
-.paging a{
-    font-size:15px;
-    margin:15px;
+
+.paging a {
+    font-size: 15px;
+    margin: 15px;
 }
+
 @media (max-width:992px) {
     .menu {
         background: #ededed;
@@ -195,4 +201,261 @@ order_table tbody td a small{
         width: 25%;
         margin-left: 0%;
     }
+}
+
+/*---------모바일 480----------*/
+
+
+@media (max-width:480px) {
+    header {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .hailli {}
+
+    header .hailli .gnb {
+        float: left;
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    header .hailli .gnb a {
+        padding: 0 10px;
+    }
+
+    header .hailli h1 {
+        font-size: 2em;
+        clear: both;
+    }
+
+    header nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+
+        display: flex;
+        align-items: center;
+        transform: translateX(100%);
+        transition: .5s;
+        z-index: 1;
+    }
+
+    header nav.active {
+        transform: translateX(0%);
+    }
+
+    header .hailli nav {
+        width: 30%;
+
+        display: block;
+        text-align: center
+    }
+
+    header .hailli nav a {
+        top: 10%;
+
+        font-size: 12px;
+        color: #fff;
+        display: block;
+    }
+
+    .menu-trigger {
+        display: block;
+        z-index: 2;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .member {
+        width: 100%;
+        display: flex;
+        height: 100%;
+    }
+
+    .menu {
+        background: #ededed;
+        padding: 50px 0px;
+        text-align: right;
+        width: 15%;
+    }
+
+    .menu h1 {
+        font-size: 10px;
+        margin-bottom: 40px;
+        padding-right: 10px;
+    }
+
+    .menu ul {}
+
+    .menu ul li {}
+
+    .menu ul li a {
+        display: block;
+        font-size: 10px;
+        padding: 15px 10px;
+        position: relative;
+        color: #666;
+        transition: .7s;
+    }
+
+    .menu ul li a.active {
+        background: rgba(0, 0, 0, 0.3);
+        color: #fff;
+        width: 100%;
+    }
+
+    .menu ul li:hover a {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.3);
+        color: #fff;
+        width: 100%;
+    }
+
+    .order {
+        margin: none;
+        padding: 0;
+        width: 85%;
+    }
+
+    .order h2 {
+        font-size: 15px;
+        margin-bottom: 35px;
+        text-align: center;
+    }
+
+    .order_list {
+        width: 100%;
+    }
+
+    .order_list span {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+
+    .order_table {
+        border-spacing: 0;
+        border-radius: 10px;
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    .order_table thead {}
+
+    .order_table thead tr {}
+
+    .order_table thead th {
+        background: #ededed;
+        color: #333;
+        font-size: 10px;
+        padding: 12px;
+    }
+
+    .order_table thead th:nth-of-type(1) {
+        width: 5%;
+    }
+
+    .order_table thead th:nth-of-type(2) {
+        width: 30%;
+    }
+
+    /*
+.order_table thead th:nth-of-type(3) {
+    width: 15%;
+}
+*/
+
+    .order_table thead th:nth-of-type(4) {
+        width: 25%;
+    }
+
+    .order_table tbody {}
+
+    .order_table tbody tr {}
+
+    .order_table tbody td {
+        border-bottom: double;
+        border-color: #ededed;
+        text-align: left;
+    }
+
+    .order_table tbody td img {
+        width: 100%;
+        border-radius: 20%;
+    }
+
+    .order_table tbody td a {
+        font-size: 10px;
+        padding: 0px;
+        color: #333;
+        white-space: pre-line;
+    }
+
+    order_table tbody td a small {
+        color: #666;
+    }
+
+    .order_table tbody td p {
+        font-size: 10px;
+    }
+
+    .order_table tbody td:nth-of-type(1) input{
+        width: 100%;
+    }
+
+    .order_table tbody td:nth-of-type(2) {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .order_table tbody td:nth-of-type(3) {
+        text-overflow: ellipsis;
+        line-height: 1.5;
+    }
+
+    .order_table tbody td:nth-of-type(4) {
+        text-align: center;
+    }
+
+    .order_list > p {
+        margin-top: 5px;
+        text-align: right;
+    }
+
+    .order_list p select {
+        border: 1px solid #ededed;
+        border-radius: 10px;
+        padding: 3px 10px;
+        font-size: 10px;
+    }
+
+    .sel select option {}
+
+    .paging {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .paging a {
+        font-size: 10px;
+        margin: 15px;
+    }
+
+    .footer {}
+
+    .h_f {}
+
+    .h_f p {
+        font-size: 14px;
+    }
+
+    .h_f div {}
 }

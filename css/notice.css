@@ -241,8 +241,14 @@ header {
     color: #fcfbe3;
     font-size: 15px;
     line-height: 2;
+    
+    text-decoration: none;
+    transition: .5s;
 }
 
+.button a:hover{
+     background:#8953A8;
+}
 
 /**********페이지 버튼**********/
 /*

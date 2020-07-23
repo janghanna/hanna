@@ -3,45 +3,66 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Cafe__HAILLI
-    </title>
+    <title>Cafe__HAILLI</title>
     <link href="css/road.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/cake.png">
 
 </head>
 
 <body>
+    <!-----헤더고정----->
     <header>
-        <div class="top">
-            <h1> <a href="index.html"> 〈 HAILLI 〉 </a> </h1>
+        <div class="hailli">
             <div class="gnb">
-                <a href="#"> 로그인 </a>
-                <a href="#"> MY페이지 </a>
-                <a href="#"> 1:1 문의 </a> </div>
-        </div>
-        <nav>
-            <div>
-                <a href="cafe.html"> 카페소개 </a>
-                <a href="reservation.html"> 예약하기 </a>
-                <a href="review.html"> 이용후기 </a>
-                <a href="notice.html"> 공지사항 </a>
-                <a href="road.html"> 오시는길 </a></div>
-        </nav>
+                <a href="login.html">로그인</a>
+                <a href="member1.html">MY페이지</a>
+                <a href="qna.html">1 : 1문의</a>
+            </div>
+            <a href="index.html">
+                <h1>〈HAILLI〉</h1>
+            </a>
+            <nav>
+                <a href="cafe.html">카페소개</a>
+                <a href="reservation.html">예약하기</a>
+                <a href="review.html">이용후기</a>
+                <a href="notice.html">공지사항</a>
+                <a href=road.html>오시는길</a>
+            </nav>
 
+            <a class="menu-trigger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
     </header>
 
+    <script>
+        const menu =
+            document.querySelector('.menu-trigger');
+        const nav = document.querySelector('nav');
+
+        menu.addEventListener('click', function() {
+            menu.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+    </script>
     <main>
-        <div class="banner">
-            <img src="img/2-1.jpg">
-            <h2> 오시는길 </h2>
+        <div class="slide">
+            <div class="banner">
+                <h2>오시는길</h2>
+                <img src="img/116.jpg">
+
+            </div>
         </div>
 
 
         <!--===================================-->
         <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.029455167613!2d127.12063931507808!3d37.53080293393189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca559b679e829%3A0xe0e6865552431548!2z7ZWY7J2866as!5e0!3m2!1sko!2skr!4v1594878861228!5m2!1sko!2skr" width="900" height="500" frameborder="0" style="box-shadow: 2px 1px 10px 1px rgba(0,0,0,0.2);" allowfullscreen ></iframe></div>
-            
-            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.029455167613!2d127.12063931507808!3d37.53080293393189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca559b679e829%3A0xe0e6865552431548!2z7ZWY7J2866as!5e0!3m2!1sko!2skr!4v1594878861228!5m2!1sko!2skr" width="900" height="500" frameborder="0" style="box-shadow: 2px 1px 10px 1px rgba(0,0,0,0.2);" allowfullscreen></iframe></div>
+
+
 
 
 
@@ -52,9 +73,7 @@
         <div class="mmm">
             <img src="img/5-1.png">
             <table class="m1">
-
                 <tr>
-
                     <th> 주소 </th>
                 </tr>
                 <tr>
@@ -64,13 +83,15 @@
                     <th> 번호 </th>
                 </tr>
                 <tr>
-                    <td>070-8775</td>
+                    <td>070-8775-0010</td>
                 </tr>
             </table>
+
             <img src="img/5-2.png">
             <table class="m2">
                 <tr>
-                    <th>지하철역</th>
+                    <th colspan="2">지하철역</th>
+                    
                 </tr>
                 <tr>
                     <td>강동구청역</td>
@@ -88,7 +109,7 @@
             <img src="img/5-3.png">
             <table class="m3">
                 <tr>
-                    <th>버스정류장</th>
+                    <th colspan="2">버스정류장</th>
                 </tr>
                 <tr>
                     <td>강동구청(25281) </td>
@@ -113,31 +134,24 @@
     </main>
 
 
-
-
-
-
-
+    <!-----풋바고정----->
     <footer>
-        <ul>
-            <li>
-                <p>업체명 : 하일리
-                    사업자 등록번호 : 784-18-00928 사업주 : 최윤혁
-                    주소 : 서울시 강동구 성내로3길 18
-                    전화번호 : 070-8775-0010
-                </p>
-            </li>
-            <li>
-                <a href="#"> <img src="img/instagram-fill.png"></a>
-                <a href="#"> <img src="img/kakao-talk-fill.png"></a></li>
-        </ul>
+        <div class="h_f">
+            <p>업체명 : 하일리
+                사업자 등록번호 : 784-18-00928 사업주 : 최윤혁
+                주소 : 서울시 강동구 성내로3길 18
+                전화번호 : 070-8775-0010</p>
+            <div>
+                <a href="https://www.instagram.com/cafe__hailli/" target="_blank">
+                    <img src="img/instagram-fill.png">
+                </a>
 
-
+                <a href="https://pf.kakao.com/_xdfxmgT" target="_blank">
+                    <img src="img/kakao-talk-fill.png">
+                </a>
+            </div>
+        </div>
     </footer>
+    <!-----풋바 끝----->
 
-
-
-
-</body>
-
-</html>
+</body></html>

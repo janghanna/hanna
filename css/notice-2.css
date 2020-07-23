@@ -232,6 +232,8 @@ header {
     width: 150px;
     display: inline-block;
     margin-bottom: 5%;
+    
+    text-decoration: none;
 }
 
 /*목록*/
@@ -243,8 +245,14 @@ header {
     border: 1px solid #ededed;
     background: #ededed;
     border-radius: 10px;
+    transition: .5s;
 
 }
+
+.button a:nth-of-type(1):hover{
+     background:#999999;
+}
+
 
 /**********페이지 버튼**********/
 /*

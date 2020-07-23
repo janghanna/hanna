@@ -7,68 +7,53 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>cafe. HAILLI </title>
+    <title>Cafe__HAILLI</title>
 
 
     <link rel="stylesheet" href="css/sign_up.css" type="text/css">
 
-    <link rel="icon" href="img/favi.ico">
+    <link rel="icon" href="img/cake.png">
 
 </head>
 
 <body>
-
+ <!-----헤더고정----->
     <header>
-        <article>
-            <h1>
-                <a href="">
-                    <img src="img/HAILLI.png" alt="">
-                </a>
-            </h1>
+        <div class="hailli">
+            <div class="gnb">
+                <a href="login.html">로그인</a>
+                <a href="member1.html">MY페이지</a>
+                <a href="qna.html">1 : 1문의</a>
+            </div>
+            <a href="index.html">
+                <h1>〈HAILLI〉</h1>
+            </a>
+            <nav>
+                <a href="cafe.html">카페소개</a>
+                <a href="reservation.html">예약하기</a>
+                <a href="review.html">이용후기</a>
+                <a href="notice.html">공지사항</a>
+                <a href=road.html>오시는길</a>
+            </nav>
 
-            <ul>
-                <li>
-                    <a href="login.html">로그인</a>
-                <li>
-                    <a href="member.html">MY 페이지</a>
-                </li>
-                <li>
-                    <a href="qna_none.html">1 : 1 문의</a>
-                </li>
-            </ul>
-        </article>
-
-        <nav>
-            <ul>
-                <li>
-                    <a href="">
-                        카페소개
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        예약하기
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        이용후기
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        공지사항
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        오시는길
-                    </a>
-                </li>
-            </ul>
-        </nav>
+            <a class="menu-trigger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
     </header>
+    
+            <script>
+            const menu =
+                document.querySelector('.menu-trigger');
+            const nav = document.querySelector('nav');
 
+            menu.addEventListener('click', function() {
+                menu.classList.toggle('active');
+                nav.classList.toggle('active');
+            });
+        </script>
     <main>
         <div class="sign_up">
             <form>
@@ -99,25 +84,24 @@
         </div>
     </main>
 
+    <!-----풋바고정----->
     <footer>
-        <div class="footer">
+        <div class="h_f">
             <p>업체명 : 하일리
                 사업자 등록번호 : 784-18-00928 사업주 : 최윤혁
                 주소 : 서울시 강동구 성내로3길 18
-                전화번호 : 070-8775-0010
-            </p>
-            <ul>
-                <li>
-                    <a href="">
-                        <img src="img/icon_insta.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="img/icon_kakao.png" alt="">
-                    </a>
-                </li>
-            </ul>
+                전화번호 : 070-8775-0010</p>
+            <div>
+                <a href="https://www.instagram.com/cafe__hailli/" target="_blank">
+                    <img src="img/instagram-fill.png">
+                </a>
+
+                <a href="https://pf.kakao.com/_xdfxmgT" target="_blank">
+                    <img src="img/kakao-talk-fill.png">
+                </a>
+            </div>
         </div>
     </footer>
+    <!-----풋바 끝----->
+
 </body></html>

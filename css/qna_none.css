@@ -1,4 +1,4 @@
-@import url(common_ys.css);
+@import url(common-hn.css);
 
 main {
     margin: 0 auto;
@@ -10,34 +10,157 @@ main {
 .qna {
     margin: 0 auto;
     padding: 0 50px;
-    width:80%;
-    height:100%;
+    width: 80%;
+    height: 100%;
 }
 
 .qna h2 {
     font-size: 25px;
-    padding:40px;
+    padding: 40px;
     text-align: center;
 }
 
 .content {
     text-align: center;
 }
-.content p{
-    margin-top:100px;
-    color:#666;
-    font-size:18px;
+
+.content p {
+    margin-top: 100px;
+    color: #666;
+    font-size: 18px;
 }
 
-.content a{
-    background:#AD74CE;
-    padding:10px 70px;
+.content a {
+    background: #AD74CE;
+    padding: 10px 70px;
     border-radius: 10px;
-    display:inline-block;
-    margin:40px auto;
-    color:#fff;
-    transition:.5s;
+    display: inline-block;
+    margin: 40px auto;
+    color: #fff;
+    transition: .5s;
 }
-.content a:hover{
-    background:#8953A8;
+
+.content a:hover {
+    background: #8953A8;
+}
+
+/*---------모바일 480----------*/
+
+
+@media (max-width:480px) {
+    header {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .hailli {}
+
+    header .hailli .gnb {
+        float: left;
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    header .hailli .gnb a {
+        padding: 0 10px;
+    }
+
+    header .hailli h1 {
+        font-size: 2em;
+        clear: both;
+    }
+
+    header nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+
+        display: flex;
+        align-items: center;
+        transform: translateX(100%);
+        transition: .5s;
+        z-index: 1;
+    }
+
+    header nav.active {
+        transform: translateX(0%);
+    }
+
+    header .hailli nav {
+        width: 30%;
+
+        display: block;
+        text-align: center
+    }
+
+    header .hailli nav a {
+        top: 10%;
+
+        font-size: 12px;
+        color: #fff;
+        display: block;
+    }
+
+    .menu-trigger {
+        display: block;
+        z-index: 2;
+    }
+
+    main {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 10%;
+    }
+
+
+    .qna {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 10%;
+    }
+
+    .qna h2 {
+        font-size: 20px;
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .content p {
+        margin-top: 100px;
+        color: #666;
+        font-size: 15px;
+    }
+
+    .content a {
+        margin-top: 20%;
+
+        width: 30%;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        color: #fff;
+        background: #AD74CE;
+        display: inline-block;
+        font-size: 12px;
+    }
+
+    .content a:hover {
+        background: #8953A8;
+    }
+
+
+    .h_f p {
+        font-size: 14px;
+    }
 }

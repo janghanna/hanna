@@ -3,39 +3,61 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Cafe__HAILLI
-    </title>
+    <title>Cafe__HAILLI</title>
     <link href="css/cafe.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/cake.png">
 
 </head>
 
 <body>
+    <!-----헤더고정----->
     <header>
-        <div class="top">
-            <h1> <a href="#">〈 HAILLI 〉</a> </h1>
+        <div class="hailli">
             <div class="gnb">
-                <a href="#"> 로그인 </a>
-                <a href="#"> MY페이지 </a>
-                <a href="#"> 1:1 문의 </a> </div>
-        </div>
-        <nav>
-            <div>
-                <a href="cafe.html"> 카페소개 </a>
-                <a href="reservation.html"> 예약하기 </a>
-                <a href="review.html"> 이용후기 </a>
-                <a href="notice.html"> 공지사항 </a>
-                <a href="road.html"> 오시는길 </a></div>
-        </nav>
+                <a href="login.html">로그인</a>
+                <a href="member1.html">MY페이지</a>
+                <a href="qna.html">1 : 1문의</a>
+            </div>
+            <a href="index.html">
+                <h1>〈HAILLI〉</h1>
+            </a>
+            <nav>
+                <a href="cafe.html">카페소개</a>
+                <a href="reservation.html">예약하기</a>
+                <a href="review.html">이용후기</a>
+                <a href="notice.html">공지사항</a>
+                <a href=road.html>오시는길</a>
+            </nav>
 
+            <a class="menu-trigger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
     </header>
 
-    <main>
-        <div class="banner">
-            <img src="img/2-1.jpg">
-            <h2> 카페소개</h2>
-        </div>
+    <script>
+        const menu =
+            document.querySelector('.menu-trigger');
+        const nav = document.querySelector('nav');
 
+        menu.addEventListener('click', function() {
+            menu.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+    </script>
+
+    <div class="slide">
+        <div class="banner">
+            <h2>카페소개</h2>
+            <img src="img/116.jpg">
+
+        </div>
+    </div>
+    
+    <main>
         <div class="main">
             <div class="m1">
                 <img src="img/2-2.jpg" alt="">
@@ -43,20 +65,18 @@
                     <h2> CAFE HAILLI
                         <small>Specialty coffe & cake, cookie, cupcake</small></h2>
                     <p>Cafe HAILLI 는
-                        케이크와 음료가 있는 카페입니다.
-                        맛있는 케이크 드시면서 하일리에 놀러오세요.
-                        영업시간
+                        케이크와 음료가 있는 카페입니다.<br>
+                        맛있는 케이크 드시면서 하일리에 놀러오세요.<br>
+                        <b>영업시간</b><br>
                         월 ~ 금
                         07 : 30 ~ 21 : 00
-                        토,일
+                        <br>토,일
                         10 : 00 ~ 21 : 00
                     </p>
                 </article>
 
             </div>
             <div class="m2">
-
-
                 <p>특별한 선물이 필요한 날,
                     마음에 드는 케이크를
                     찾기 어려워하시는 분들을 위해
@@ -66,7 +86,7 @@
                     하일리로 충전하러 오세요 :)
                 </p>
 
-                <img src="img/2-3.jpg" alt="">
+                <img src="img/c1.jpg" alt="">
 
             </div>
 
@@ -79,42 +99,28 @@
                     그럼, 오늘도
                     행복한 하일리하세요~
                 </p>
-
-
             </div>
-
         </div>
-
-
-
     </main>
 
-
-
-
-
-
-
+    <!-----풋바고정----->
     <footer>
-        <ul>
-            <li>
-                <p>업체명 : 하일리
-                    사업자 등록번호 : 784-18-00928 사업주 : 최윤혁
-                    주소 : 서울시 강동구 성내로3길 18
-                    전화번호 : 070-8775-0010
-                </p>
-            </li>
-            <li>
-                <a href="#"> <img src="img/instagram-fill.png"></a>
-                <a href="#"> <img src="img/kakao-talk-fill.png"></a></li>
-        </ul>
+        <div class="h_f">
+            <p>업체명 : 하일리
+                사업자 등록번호 : 784-18-00928 사업주 : 최윤혁
+                주소 : 서울시 강동구 성내로3길 18
+                전화번호 : 070-8775-0010</p>
+            <div>
+                <a href="https://www.instagram.com/cafe__hailli/" target="_blank">
+                    <img src="img/instagram-fill.png">
+                </a>
 
-
+                <a href="https://pf.kakao.com/_xdfxmgT" target="_blank">
+                    <img src="img/kakao-talk-fill.png">
+                </a>
+            </div>
+        </div>
     </footer>
+    <!-----풋바 끝----->
 
-
-
-
-</body>
-
-</html>
+</body></html>

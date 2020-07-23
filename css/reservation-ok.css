@@ -173,7 +173,7 @@ header {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-   
+
     color: #333333;
 }
 
@@ -182,16 +182,18 @@ header {
 }
 
 
+
 /**********본문 예약하기**********/
 .re {
     width: 1080px;
+    height: 600px;
     margin: 0 auto;
 
     overflow: hidden;
 }
 
 .tab {
-    margin: 50px auto;
+    margin-top: 40px;
     float: left;
 }
 
@@ -239,6 +241,7 @@ table {
     font-size: 15px;
 
     float: right;
+    margin-top: 20px;
 }
 
 tbody {}
@@ -247,7 +250,7 @@ tbody tr {}
 
 tbody tr th {
     text-align: right;
-    line-height: 2;
+    line-height: 1;
 }
 
 tbody tr td {
@@ -327,19 +330,41 @@ tfoot tr:nth-of-type(3) {
 }
 
 /**********버튼**********/
+.but {
+    width: 1080px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
 .button {
+    float: right;
+
     text-align: center;
     justify-content: center;
     align-content: center;
-    padding: 3% 0;
+
+
 
 }
 
 .button a {
     width: 257px;
+    height: 50px;
     display: inline-block;
     margin: 20px 5px;
+    padding: 1.5% 0;
+    text-decoration: none;
+    transition: .5s;
 }
+
+.but .button a:nth-of-type(1):hover {
+    background: #999999;
+}
+
+.but .button a:nth-of-type(2):hover {
+    background: #8953A8;
+}
+
 
 /*장바구니*/
 .button a:nth-of-type(1) {
@@ -428,6 +453,41 @@ footer {
 
 
 @media (max-width:480px) {
+
+    .all {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .all > .all-m {}
+
+    .all-m {
+        border-radius: 10px;
+        background-color: #ffffff;
+        width: 180px;
+        padding: 5px;
+
+    }
+
+    .all-m > p {
+        font-size: 15px;
+    }
+
+    .all-m > hr {
+        width: 150px;
+        margin: 0 auto;
+    }
+
+    .all-m > a {
+        font-size: 15px;
+    }
+
     header {
 
         display: flex;
@@ -525,7 +585,119 @@ footer {
         display: none;
     }
 
+    main {
+        width: 100%;
+    }
 
+    .re {
+        height: auto;
+        width: 100%;
+        overflow: none;
+    }
+
+    .re .tab {
+        float: none;
+        width: 100%;
+    }
+
+    .re .tab .tab-head {
+        width: 100%;
+
+    }
+
+    .tab-head div {
+        width: 95%;
+    }
+
+    .re .tab .tab-body {
+        width: 100%;
+    }
+
+    .tab-body a {
+        width: 27%;
+    }
+
+    .tab-body a img {
+        width: 100%;
+    }
+
+    .tab-head div.active {
+        /*        display: block;*/
+    }
+
+    table {
+        float: none;
+        width: auto;
+    }
+
+    table tbody {
+        width: 100%;
+    }
+
+    tbody tr {
+        width: 100%;
+        font-size: 11px;
+
+    }
+
+    tbody tr th {
+        text-align: center;
+    }
+
+    tbody tr td {
+        text-align: start;
+    }
+
+    table tbody tr:nth-of-type(1) {}
+
+    table tbody tr:nth-of-type(1) th {
+        width: 20%;
+    }
+
+    table tbody tr:nth-of-type(1) td {
+        width: 80%;
+    }
+
+    table tfoot {
+        width: 100%;
+    }
+
+    table tfoot tr {
+        font-size: 10px;
+    }
+
+    table tfoot tr:nth-of-type(3) {
+        font-size: 15px;
+    }
+
+
+    .but {
+        width: auto;
+    }
+
+    .button {
+        width: 100%;
+        height: 30vw;
+    }
+
+    .but .button a {
+        width: 30%;
+        height: 30%;
+        font-size: 10px;
+    }
+
+    .list {
+        width: auto;
+    }
+
+    .list header p {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .list img {
+        width: 100%;
+    }
 
     .footer {}
 
