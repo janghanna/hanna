@@ -263,7 +263,9 @@ tbody tr:nth-of-type(7) th small {
 }
 
 tbody tr:nth-of-type(8) {}
-
+tbody tr th{
+    width: 120px;
+}
 
 
 /*금액*/

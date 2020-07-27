@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="css/pay.css" type="text/css">
 
-   <link rel="icon" href="img/cake.png">
+    <link rel="icon" href="img/cake.png">
 
 </head>
 
@@ -44,17 +44,17 @@
             </a>
         </div>
     </header>
-    
-            <script>
-            const menu =
-                document.querySelector('.menu-trigger');
-            const nav = document.querySelector('nav');
 
-            menu.addEventListener('click', function() {
-                menu.classList.toggle('active');
-                nav.classList.toggle('active');
-            });
-        </script>
+    <script>
+        const menu =
+            document.querySelector('.menu-trigger');
+        const nav = document.querySelector('nav');
+
+        menu.addEventListener('click', function() {
+            menu.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+    </script>
 
     <main>
         <div class="pay">
@@ -118,15 +118,15 @@
             <!--            주문자 정보-->
             <article class="user_info">
                 <h3>02. 주문자 정보</h3>
-                <form action="">
+                <form action="#">
                     <div class="user">
                         <ul>
                             <li>
-                                <label for="">이름</label>
+                                <label>이름</label>
                                 <input type="text" name="name">
                             </li>
                             <li>
-                                <label for="">전화번호</label>
+                                <label>전화번호</label>
                                 <input type="text" name="phone_number">
                             </li>
                             <li></li>
@@ -140,7 +140,7 @@
             <!--                결제하기-->
             <article class="good_pay">
                 <h4>03. 결제하기</h4>
-                
+
                 <ul>
                     <li>
                         <span>상품금액</span>
@@ -162,11 +162,11 @@
             <article class="pay_select">
                 <h5>04. 결제수단</h5>
                 <div class="pay_option">
-                    <label for="">
+                    <label>
                         신용카드
                         <input type="radio" value="creditcard" name="pos" id="pos1">
                     </label>
-                    <label for="">
+                    <label>
                         계좌이체
                         <input type="radio" value="account" name="pos" id="pos2">
                     </label>
@@ -181,7 +181,7 @@
     </main>
 
 
-   <!-----풋바고정----->
+    <!-----풋바고정----->
     <footer>
         <div class="h_f">
             <p>업체명 : 하일리

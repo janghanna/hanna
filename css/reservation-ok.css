@@ -297,6 +297,9 @@ tbody tr:nth-of-type(7) th small {
     float: none;
     font-size: 10px;
 }
+tbody tr th{
+    width: 120px;
+}
 
 tbody tr:nth-of-type(8) {}
 

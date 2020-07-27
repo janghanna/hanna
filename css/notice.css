@@ -204,6 +204,7 @@ header {
 
 .table tbody tr th:nth-of-type(1) {
     text-align: center;
+    width: 80px;
 }
 
 .table tbody tr th:nth-of-type(2) {
@@ -212,14 +213,17 @@ header {
 
 .table tbody tr th:nth-of-type(3) {
     text-align: center;
+    width: 100px;
 }
 
 .table tbody tr th:nth-of-type(4) {
     text-align: center;
+    width: 100px;
 }
 
 .table tbody tr th:nth-of-type(5) {
     text-align: center;
+    width: 100px;
 }
 
 /**********글쓰기 버튼**********/
@@ -437,6 +441,7 @@ footer {
 
     .table table thead td:nth-of-type(3) {
         width: 10%;
+        display: none;
     }
 
     .table table thead td:nth-of-type(4) {
@@ -445,10 +450,20 @@ footer {
 
     .table table thead td:nth-of-type(5) {
         width: 10%;
+        display: none;
     }
 
     .table table tbody th {
         font-size: 10px;
+    }
+    .table table tbody th:nth-of-type(1){}
+    .table table tbody th:nth-of-type(2){}
+    .table table tbody th:nth-of-type(3){
+        display: none;
+    }
+    .table table tbody th:nth-of-type(4){}
+    .table table tbody th:nth-of-type(5){
+        display: none;
     }
     .h_f p{font-size: 14px;}
 }

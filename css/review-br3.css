@@ -193,12 +193,15 @@ header {
 }
 .table tbody tr th:nth-of-type(2){
     text-align: center;
+    width: 100px;
 }
 .table tbody tr th:nth-of-type(3){
     text-align: center;
+    width: 100px;
 }
 .table tbody tr th:nth-of-type(4){
     text-align: center;
+    width: 80px;
 }
 
 /**********글쓰기 버튼**********/
@@ -292,9 +295,11 @@ transition: .5s;
 }
 .table2 tbody tr th:nth-of-type(2){
     text-align: center;
+    width: 140px;
 }
 .table2 tbody tr th:nth-of-type(3){
     text-align: center;
+    width:  140px;
 }
 
 

@@ -202,6 +202,7 @@ header {
 
 .table tbody tr th:nth-of-type(1) {
     text-align: center;
+    width: 80px;
 }
 
 .table tbody tr th:nth-of-type(2) {
@@ -210,14 +211,17 @@ header {
 
 .table tbody tr th:nth-of-type(3) {
     text-align: center;
+    width: 100px;
 }
 
 .table tbody tr th:nth-of-type(4) {
     text-align: center;
+    width: 100px;
 }
 
 .table tbody tr th:nth-of-type(5) {
     text-align: center;
+    width: 100px;
 }
 
 /**********글쓰기 버튼**********/
@@ -233,7 +237,7 @@ header {
     width: 150px;
     display: inline-block;
     margin-bottom: 5%;
-    
+
     text-decoration: none;
     transition: .5s;
 }
@@ -251,8 +255,8 @@ header {
 
 }
 
-.button a:nth-of-type(1):hover{
-     background:#999999;
+.button a:nth-of-type(1):hover {
+    background: #999999;
 }
 
 /**********페이지 버튼**********/
@@ -433,10 +437,11 @@ footer {
     .button a {
         width: 50%;
     }
-    .button a:nth-of-type(1){
+
+    .button a:nth-of-type(1) {
         font-size: 12px;
     }
-    
+
     .table table thead td {
         font-size: 10px;
     }
@@ -447,6 +452,7 @@ footer {
 
     .table table thead td:nth-of-type(3) {
         width: 10%;
+        display: none;
     }
 
     .table table thead td:nth-of-type(4) {
@@ -455,16 +461,34 @@ footer {
 
     .table table thead td:nth-of-type(5) {
         width: 10%;
+        display: none;
     }
 
     .table table tbody th {
         font-size: 10px;
     }
-    
-    .table table tbody tr{}
-    .table table tbody tr:nth-of-type(2) img{
+
+    .table table tbody th:nth-of-type(1) {}
+
+    .table table tbody th:nth-of-type(2) {}
+
+    .table table tbody th:nth-of-type(3) {
+        display: none;
+    }
+
+    .table table tbody th:nth-of-type(4) {}
+
+    .table table tbody th:nth-of-type(5) {
+        display: none;
+    }
+
+    .table table tbody tr {}
+
+    .table table tbody tr:nth-of-type(2) img {
         width: 100%;
     }
-    
-    .h_f p{font-size: 14px;}
+
+    .h_f p {
+        font-size: 14px;
+    }
 }

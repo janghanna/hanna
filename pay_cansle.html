@@ -12,14 +12,14 @@
 
 <body>
 
-   <div class="all">
+    <div class="all">
         <div class="all-m">
             <p>결제를 취소했습니다.</p>
             <hr>
             <a href="pay.html">확인</a>
         </div>
     </div>
-   
+
     <!-----헤더고정----->
     <header>
         <div class="hailli">
@@ -46,17 +46,17 @@
             </a>
         </div>
     </header>
-    
-            <script>
-            const menu =
-                document.querySelector('.menu-trigger');
-            const nav = document.querySelector('nav');
 
-            menu.addEventListener('click', function() {
-                menu.classList.toggle('active');
-                nav.classList.toggle('active');
-            });
-        </script>
+    <script>
+        const menu =
+            document.querySelector('.menu-trigger');
+        const nav = document.querySelector('nav');
+
+        menu.addEventListener('click', function() {
+            menu.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+    </script>
 
     <main>
         <div class="pay">
@@ -73,7 +73,7 @@
 
                         <span>
                             1개 선택
-                            <a href="">
+                            <a href="#">
                                 <img src="img/trash.png" alt="">
                             </a>
                         </span>
@@ -96,7 +96,7 @@
                                 </td>
                                 <td>
                                     <img src="img/cake's/mini.jpg" alt="">
-                                    <a href="">하트 시트 케이크
+                                    <a href="#">하트 시트 케이크
                                         33,000원</a>
                                 </td>
                                 <td>
@@ -120,15 +120,15 @@
             <!--            주문자 정보-->
             <article class="user_info">
                 <h3>02. 주문자 정보</h3>
-                <form action="">
+                <form action="#">
                     <div class="user">
                         <ul>
                             <li>
-                                <label for="">이름</label>
+                                <label>이름</label>
                                 <input type="text" name="name">
                             </li>
                             <li>
-                                <label for="">전화번호</label>
+                                <label>전화번호</label>
                                 <input type="text" name="phone_number">
                             </li>
                             <li></li>
@@ -142,7 +142,7 @@
             <!--                결제하기-->
             <article class="good_pay">
                 <h4>03. 결제하기</h4>
-                
+
                 <ul>
                     <li>
                         <span>상품금액</span>
@@ -164,11 +164,11 @@
             <article class="pay_select">
                 <h5>04. 결제수단</h5>
                 <div class="pay_option">
-                    <label for="">
+                    <label>
                         신용카드
                         <input type="radio" value="creditcard" name="pos" id="pos1">
                     </label>
-                    <label for="">
+                    <label>
                         계좌이체
                         <input type="radio" value="account" name="pos" id="pos2">
                     </label>
@@ -180,7 +180,7 @@
 
             <a href="pay_ok.html">주문하기</a>
         </div>
-        
+
     </main>
 
 
