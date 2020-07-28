@@ -347,6 +347,7 @@ footer {
 
 .h_f div {
     padding: 20px 0;
+    position: relative;
 }
 
 .h_f div a {}
@@ -355,7 +356,12 @@ footer {
 
 .h_f div a:nth-of-type(2) {}
 
-
+.h_f > div > p > a> img {
+    position: absolute;
+    margin-top: 0%;
+    left: -50%;
+    bottom: 0%;
+}
 
 @media (max-width:992px) {
     .menu {
@@ -524,7 +530,7 @@ footer {
     }
 
     .tab div span {
-        font-size:10px;
+        font-size: 10px;
     }
 
     .tab div span a {
@@ -561,7 +567,7 @@ footer {
         width: 20%;
     }
 
-/*
+    /*
     .cart_table thead th:nth-of-type(3) {
         width: %;
     }
@@ -579,7 +585,7 @@ footer {
 
     .cart_table tbody tr {}
 
-    .cart_table tbody td {       
+    .cart_table tbody td {
         border-bottom: double;
         border-color: #ededed;
         text-align: left;
@@ -607,14 +613,16 @@ footer {
         border-radius: 30%;
         width: 100%;
         outline: none;
-        cursor:pointer;
+        cursor: pointer;
         text-align: center;
         font-size: 10px;
 
     }
-    .cart_table tbody tr td:nth-of-type(1) input{
+
+    .cart_table tbody tr td:nth-of-type(1) input {
         width: 100%;
     }
+
     .cart_table tbody td:nth-of-type(2) {
         display: block;
         align-items: center;
@@ -637,7 +645,7 @@ footer {
     }
 
     .tab > a {
-        width:auto;
+        width: auto;
         font-size: 10px;
         padding: 10px;
     }

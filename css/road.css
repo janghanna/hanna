@@ -133,8 +133,15 @@ div iframe{
     padding: 10px 0 0 20px;
     height: 100%;
 }
-
-
+.h_f > div{
+    position: relative;
+}
+.h_f > div > p > a> img {
+    position: absolute;
+    margin-top: 0%;
+    left: -50%;
+    bottom: 0%;
+}
 /*---------모바일 480----------*/
 
 

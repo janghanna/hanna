@@ -443,6 +443,7 @@ footer {
 
 .h_f div {
     padding: 20px 0;
+    position: relative;
 }
 
 .h_f div a {}
@@ -451,6 +452,12 @@ footer {
 
 .h_f div a:nth-of-type(2) {}
 
+.h_f > div > p > a> img {
+    position: absolute;
+    margin-top: 0%;
+    left: -50%;
+    bottom: 0%;
+}
 
 /*---------모바일 480----------*/
 

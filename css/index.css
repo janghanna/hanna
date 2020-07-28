@@ -209,7 +209,7 @@ header {
     content: '';
     border: 1px solid #333333;
     width: 30px;
-    margin: 2% auto;
+    margin: 30px auto;
 }
 
 .list {
@@ -405,6 +405,7 @@ footer {
     width: 100%;
     padding: 1%;
     background-color: #333333;
+
 }
 
 .h_f {
@@ -412,6 +413,7 @@ footer {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .h_f p {
@@ -420,10 +422,12 @@ footer {
     color: #777777;
     font-size: 15px;
     line-height: 1.5;
+
 }
 
 .h_f div {
     padding: 20px 0;
+    position: relative;
 }
 
 .h_f div a {}
@@ -432,6 +436,14 @@ footer {
 
 .h_f div a:nth-of-type(2) {}
 
+.h_f div p {}
+
+.h_f div p img {
+    position: absolute;
+    margin-top: 0%;
+    left: -50%;
+    bottom: 0%;
+}
 
 
 /*---------모바일 480----------*/
@@ -511,7 +523,7 @@ footer {
     }
 
     .slide .imgs {
-        
+
         width: 100%;
         height: 100vw;
 
@@ -529,6 +541,16 @@ footer {
 
     .slide .indi {
         display: none;
+    }
+
+    .cake {}
+
+    .cake h2 {
+        font-size: 25px;
+    }
+
+    .cake p {
+        font-size: 16px;
     }
 
     main .list {}
@@ -555,8 +577,52 @@ footer {
 
     .list ul li figure figcaption {}
 
+    .service {
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .service h2 {
+        font-size: 25px;
+    }
+
+    .service p {
+        font-size: 16px;
+    }
+
+    .service .s_2 {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .service .s_2 a {
+        margin: 0;
+    }
+
+    .service .s_2 a img {
+        width: 50%;
+    }
+
+    .service .s_2 a p {
+        font-size: 12px;
+    }
+
     .best {
         width: 100%;
+    }
+
+    .best h2 {
+        font-size: 25px;
+    }
+
+    .best > p {
+        font-size: 16px;
+    }
+
+    .best a {
+        font-size: 15px;
     }
 
     .best .b-1 {
@@ -583,5 +649,12 @@ footer {
         font-size: 14px;
     }
 
+
     .h_f div {}
+
+    .h_f div a {}
+
+    .h_f div p {}
+
+    .h_f div p img {}
 }

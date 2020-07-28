@@ -155,6 +155,16 @@ main {
     background: #8953A8;
 }
 
+.h_f > div{
+    position: relative;
+}
+.h_f > div > p > a> img {
+    position: absolute;
+    margin-top: 0%;
+    left: -50%;
+    bottom: 0%;
+}
+
 /*---------모바일 480----------*/
 
 
