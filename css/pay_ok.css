@@ -256,3 +256,206 @@ main {}
 
     .h_f div {}
 }
+
+
+/*---------모바일 765 ~ 1080----------*/
+@media (min-width:765px) and (max-width:1080px) {
+    .all {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .all > .all-m {}
+
+    .all-m {
+        border-radius: 10px;
+        background-color: #ffffff;
+        width: 180px;
+        padding: 5px;
+
+    }
+
+    .all-m > p {
+        font-size: 15px;
+    }
+
+    .all-m > hr {
+        width: 150px;
+        margin: 0 auto;
+    }
+
+    .all-m > a {
+        font-size: 15px;
+    }
+
+    header {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .hailli {}
+
+    header .hailli .gnb {
+        float: left;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    header .hailli .gnb a {
+        padding: 0 10px;
+    }
+
+    header .hailli h1 {
+        font-size: 3em;
+        clear: both;
+    }
+
+    header nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+
+        display: flex;
+        align-items: center;
+        transform: translateX(100%);
+        transition: .5s;
+        z-index: 1;
+    }
+
+    header nav.active {
+        transform: translateX(0%);
+    }
+
+    header .hailli nav {
+        width: 30%;
+
+        display: block;
+        text-align: center
+    }
+
+    header .hailli nav a {
+        top: 10%;
+
+        font-size: 20px;
+        color: #fff;
+        display: block;
+    }
+
+    .menu-trigger {
+        display: block;
+        z-index: 2;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .pay_ok {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+
+    .pay_content {
+        padding-top: 10%;
+        text-align: center;
+        border-bottom: 5px double #ededed;
+        margin-bottom: 55px;
+    }
+
+    .pay_content h1 {
+        margin: 30px auto;
+    }
+
+    .pay_content a {
+        text-decoration: none;
+        color: #fff;
+        background: #AD74CE;
+        display: inline-block;
+        padding: 7px 36px;
+        border-radius: 10px;
+        margin-bottom: 55px;
+    }
+
+
+    /*주문자 정보*/
+    .pay_order_info {
+        border-bottom: 1px solid #ededed;
+        margin-bottom: 40px;
+    }
+
+    .pay_order_info h2 {
+        text-align: center;
+    }
+
+    .pay_order_flex {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 25px;
+        margin-bottom: 40px;
+
+        font-size: 14px;
+    }
+
+    .order_label {
+        text-align: right;
+    }
+
+    .order_label p {}
+
+    .order_info {}
+
+    .order_info p {}
+
+
+    /*결제정보*/
+    .pay_info {
+        border-bottom: 5px double #ededed;
+    }
+
+    .pay_info h3 {
+        text-align: center;
+    }
+
+    .pay_info_flex {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 25px;
+        margin-bottom: 55px;
+
+        font-size: 14px;
+    }
+
+    .info_label {
+        text-align: right;
+    }
+
+    .info_label p {}
+
+    .info_in {}
+
+    .info_in p {}
+
+   
+    /*모바일 하단*/
+    .footer {}
+
+    .h_f {}
+
+    .h_f p {
+        font-size: 14px;
+    }
+
+    .h_f div {}
+
+}

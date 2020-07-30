@@ -419,3 +419,164 @@ footer {
 
     .h_f div {}
 }
+
+
+/*---------모바일 765~1080----------*/
+
+
+@media (min-width:765px) and (max-width:1080px) {
+    header {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .hailli {}
+
+    header .hailli .gnb {
+        float: left;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    header .hailli .gnb a {
+        padding: 0 10px;
+    }
+
+    header .hailli h1 {
+        font-size: 3em;
+        clear: both;
+    }
+
+    header nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+
+        display: flex;
+        align-items: center;
+        transform: translateX(100%);
+        transition: .5s;
+        z-index: 1;
+    }
+
+    header nav.active {
+        transform: translateX(0%);
+    }
+
+    header .hailli nav {
+        width: 30%;
+
+        display: block;
+        text-align: center
+    }
+
+    header .hailli nav a {
+        top: 10%;
+
+        font-size: 20px;
+        color: #fff;
+        display: block;
+    }
+
+    .menu-trigger {
+        display: block;
+        z-index: 2;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .member {
+        width: 100%;
+        display: flex;
+        height: 100%;
+    }
+
+    .menu {
+        background: #ededed;
+        padding: 50px 0px;
+        text-align: right;
+        width: 15%;
+    }
+
+    .menu h1 {
+        font-size: 20px;
+        margin-bottom: 40px;
+        padding-right: 10px;
+    }
+
+    .menu ul {}
+
+    .menu ul li {}
+
+    .menu ul li a {
+        display: block;
+        font-size: 14px;
+        padding: 15px 10px;
+        position: relative;
+        color: #666;
+        transition: .7s;
+    }
+
+    .menu ul li a.active {
+        background: rgba(0, 0, 0, 0.3);
+        color: #fff;
+        width: 100%;
+    }
+
+    .menu ul li:hover a {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.3);
+        color: #fff;
+        width: 100%;
+    }
+
+    .cart {
+        padding: 0;
+        width: 85%;
+    }
+
+    .cart h2 {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+
+    .tab {
+        text-align: center;
+    }
+
+    .tab p {
+        margin-top: 100px;
+        color: #666;
+        font-size: 16px;
+    }
+
+    .tab a {
+       width: auto;
+        font-size: 14px;
+        padding: 10px;
+        
+    }
+
+    .tab a:hover {
+        background: #8953A8;
+    }
+
+
+    .footer {}
+
+    .h_f {}
+
+    .h_f p {
+        font-size: 14px;
+    }
+
+    .h_f div {}
+}
+

@@ -138,46 +138,51 @@ header {
 
 /**********글 내용**********/
 .table {
-    width: 1080px;
+    width: 60%;
     margin: 0 auto;
 }
 
 .table table {
     width: 100%;
 }
-.table table hr{
+
+.table table hr {
     margin: 5px auto;
 }
 
 /*제목라인*/
 .table thead {
     width: 100%;
-    text-align:  center;
+    text-align: center;
     background-color: #ededed;
-    
+
 
     font-size: 15px;
     color: #333333;
     line-height: 3;
 }
 
-/*후기내용*/ 
-.table tbody{
+/*후기내용*/
+.table tbody {
     width: 100%;
     font-size: 15px;
 }
 
 
-.table tbody tr{
+.table tbody tr {
+    text-indent: 10px;
 }
-.table tbody tr:nth-of-type(1){
+
+.table tbody tr:nth-of-type(1) {
     line-height: 3;
     border-bottom: 1px solid #ededed;
 }
-.table tbody tr:nth-of-type(2){
+
+.table tbody tr:nth-of-type(2) {
     line-height: 3;
 }
-.table tbody tr:nth-of-type(3){
+
+.table tbody tr:nth-of-type(3) {
     font-size: 15px;
     color: #333333;
     line-height: 1.6;
@@ -185,19 +190,23 @@ header {
 }
 
 
-.table body tr th{}
-.table tbody tr th:nth-of-type(1){
+.table body tr th {}
+
+.table tbody tr th:nth-of-type(1) {
     text-align: left;
 }
-.table tbody tr th:nth-of-type(2){
+
+.table tbody tr th:nth-of-type(2) {
     text-align: center;
     width: 100px;
 }
-.table tbody tr th:nth-of-type(3){
+
+.table tbody tr th:nth-of-type(3) {
     text-align: center;
     width: 100px;
 }
-.table tbody tr th:nth-of-type(4){
+
+.table tbody tr th:nth-of-type(4) {
     text-align: center;
     width: 80px;
 }
@@ -210,7 +219,8 @@ header {
     margin: 0 auto;
     width: 1080px;
 }
-.button a{
+
+.button a {
     width: 150px;
     display: inline-block;
     margin: 0 5px;
@@ -221,35 +231,38 @@ header {
     font-size: 15px;
     color: #333333;
     line-height: 2;
-    
+
     border: 1px solid #ededed;
     background: #ededed;
     border-radius: 10px;
     transition: .5s;
 
 }
+
 /*글쓰기*/
 .button a:nth-of-type(2) {
-    
+
     font-size: 15px;
     color: #fcfbe3;
     line-height: 2;
-    
+
     border: 1px solid #ad74ce;
     background: #ad74ce;
     border-radius: 10px;
     transition: .5s;
 }
 
-.button a:nth-of-type(1):hover{
-     background:#999999;
+.button a:nth-of-type(1):hover {
+    background: #999999;
 }
-.button a:nth-of-type(2):hover{
-     background:#8953A8;
+
+.button a:nth-of-type(2):hover {
+    background: #8953A8;
 }
+
 /**********후기댓글**********/
 .table2 {
-    width: 1080px;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -257,14 +270,15 @@ header {
     width: 100%;
     margin: 30px 0;
 }
-.table2 table hr{
+
+.table2 table hr {
     margin: 5px auto;
 }
 
 /*제목라인*/
 .table2 thead {
     width: 100%;
-    text-align:  center;
+    text-align: center;
     background-color: #ededed;
     border-radius: 10px;
 
@@ -273,30 +287,38 @@ header {
     line-height: 3;
 }
 
-/*후기내용*/ 
-.table2 tbody{
+/*후기내용*/
+.table2 tbody {
     width: 100%;
     font-size: 15px;
 }
-.table2 tbody tr{}
-.table2 tbody tr:nth-of-type(1){
+
+.table2 tbody tr {
+    text-indent: 10px;
+}
+
+.table2 tbody tr:nth-of-type(1) {
     line-height: 3;
     border-bottom: 1px solid #ededed;
 }
-.table2 tbody tr:nth-of-type(2){
+
+.table2 tbody tr:nth-of-type(2) {
     white-space: pre-line;
     line-height: 1.6;
 }
 
-.table2 body tr th{}
-.table2 tbody tr th:nth-of-type(1){
+.table2 body tr th {}
+
+.table2 tbody tr th:nth-of-type(1) {
     text-align: left;
 }
-.table2 tbody tr th:nth-of-type(2){
+
+.table2 tbody tr th:nth-of-type(2) {
     text-align: center;
     width: 140px;
 }
-.table2 tbody tr th:nth-of-type(3){
+
+.table2 tbody tr th:nth-of-type(3) {
     text-align: center;
     width: 140px;
 }
@@ -361,12 +383,13 @@ footer {
 
 .h_f div a:nth-of-type(2) {}
 
-.h_f > div > p > a> img {
+.h_f > div > p > a > img {
     position: absolute;
     margin-top: 0%;
     left: -50%;
     bottom: 0%;
 }
+
 /*---------모바일 480----------*/
 
 
@@ -517,12 +540,14 @@ footer {
     }
 
     .table2 {
-        width:99%;
+        width: 99%;
     }
-    .table2 thead{
+
+    .table2 thead {
         font-size: 10px;
     }
-    .table2 tbody{
+
+    .table2 tbody {
         font-size: 10px;
     }
 
@@ -536,7 +561,7 @@ footer {
         width: 30%;
     }
 
-   
+
 
     .button {
         width: 50%;
@@ -559,4 +584,212 @@ footer {
     .h_f p {
         font-size: 14px;
     }
+}
+
+
+/*---------모바일 765 ~ 1080----------*/
+@media (min-width:765px) and (max-width:1080px) {
+    .all {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .all > .all-m {}
+
+    .all-m {
+        border-radius: 10px;
+        background-color: #ffffff;
+        width: 30%;
+        padding: 1%;
+
+    }
+
+    .all-m > p {
+        font-size: 16px;
+    }
+
+    .all-m > hr {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .all-m > a {
+        font-size: 14px;
+    }
+
+    header {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .hailli {}
+
+    header .hailli .gnb {
+        float: left;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    header .hailli .gnb a {
+        padding: 0 10px;
+    }
+
+    header .hailli h1 {
+        font-size: 3em;
+        clear: both;
+    }
+
+    header nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+
+        display: flex;
+        align-items: center;
+        transform: translateX(100%);
+        transition: .5s;
+        z-index: 1;
+    }
+
+    header nav.active {
+        transform: translateX(0%);
+    }
+
+    header .hailli nav {
+        width: 30%;
+
+        display: block;
+        text-align: center
+    }
+
+    header .hailli nav a {
+        top: 10%;
+
+        font-size: 20px;
+        color: #fff;
+        display: block;
+    }
+
+    .menu-trigger {
+        display: block;
+        z-index: 2;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .table {
+        width: 99%;
+    }
+
+    .table table {
+        font-size: 14px;
+    }
+
+    .table table thead {
+        width: 100%;
+    }
+
+    .table table tbody {
+        width: 100%;
+    }
+
+    .table table thead tr {}
+
+    .table table thead td {}
+
+    .table table thead td:nth-of-type(1) {}
+
+    .table table thead td:nth-of-type(2) {
+        width: 15%;
+    }
+
+    .table table thead td:nth-of-type(3) {
+        width: 15%;
+    }
+
+    .table table thead td:nth-of-type(4) {
+        width: 15%;
+    }
+
+    .table table tbody th {
+        font-size: 14px;
+    }
+
+    .table table tbody tr {}
+
+    .table table tbody tr:nth-of-type(1) {}
+
+    .table table tbody tr:nth-of-type(2) img {
+        width: 10%;
+    }
+
+    .table table tbody tr:nth-of-type(3) {
+        font-size: 14px;
+    }
+
+    .table tbody tr:nth-of-type(3) td img {
+        width: 50%;
+    }
+
+    .table2 {
+        width: 99%;
+    }
+
+    .table2 thead {}
+
+    .table2 tbody {
+        font-size: 14px;
+    }
+
+    .table2 table thead tr {}
+
+    .table2 table thead tr td:nth-of-type(1) {
+        width: 70%
+    }
+
+    .table2 table thead tr td:nth-of-type(2) {
+        width: 30%;
+    }
+
+    .button {
+        width: 50%;
+        height: 20vw;
+    }
+
+    .button a {
+        margin: 1%;
+        width: 50%;
+    }
+
+    .button a:nth-of-type(1) {
+        font-size: 16px;
+    }
+
+    .button a:nth-of-type(2) {
+        font-size: 16px;
+    }
+
+    /*모바일 하단*/
+    .footer {}
+
+    .h_f {}
+
+    .h_f p {
+        font-size: 14px;
+    }
+
+    .h_f div {}
+
 }

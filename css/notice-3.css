@@ -144,6 +144,14 @@ header {
 .banner img {
     width: 100%;
 }
+.banner img:nth-of-type(1){
+    width: 100%;
+}
+.banner img:nth-of-type(2){
+    width: 1.5%;
+    position: absolute;
+    top: 39%; left:52.8%;
+}
 
 
 /**********공지리스트**********/
@@ -382,11 +390,11 @@ footer {
         z-index: 2;
     }
 
-    slide {
+    .slide {
         width: 100%;
     }
 
-    .banner {
+       .banner {
 
         background: url(../img/116.jpg) no-repeat 20% 50%;
         background-size: cover;
@@ -405,18 +413,27 @@ footer {
 
     .banner h2 {
         font-size: 20px;
-        /*
-        position: absolute;
-        left: 0; top: 0;
+
+        position: relative;
+        /*      left: 0; top: 0;
         transform: translate(-50%, -50%);
         color: #333333;
 */
     }
 
-    .banner img {
+    .banner img {}
+
+    .banner img:nth-of-type(1) {
+        width: 100%;
         display: none;
     }
 
+    .banner img:nth-of-type(2) {
+        width: 5%;
+        position: absolute;
+        top: 35%;
+        left: 60%;
+    }
 
     main {}
 
@@ -490,4 +507,218 @@ footer {
     .h_f p {
         font-size: 14px;
     }
+}
+
+
+/*---------모바일 765 ~ 1080----------*/
+@media (min-width:765px) and (max-width:1080px) {
+    .all {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .all > .all-m {}
+
+    .all-m {
+        border-radius: 10px;
+        background-color: #ffffff;
+        width: 180px;
+        padding: 5px;
+
+    }
+
+    .all-m > p {
+        font-size: 15px;
+    }
+
+    .all-m > hr {
+        width: 150px;
+        margin: 0 auto;
+    }
+
+    .all-m > a {
+        font-size: 15px;
+    }
+
+    header {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .hailli {}
+
+    header .hailli .gnb {
+        float: left;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    header .hailli .gnb a {
+        padding: 0 10px;
+    }
+
+    header .hailli h1 {
+        font-size: 3em;
+        clear: both;
+    }
+
+    header nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+
+        display: flex;
+        align-items: center;
+        transform: translateX(100%);
+        transition: .5s;
+        z-index: 1;
+    }
+
+    header nav.active {
+        transform: translateX(0%);
+    }
+
+    header .hailli nav {
+        width: 30%;
+
+        display: block;
+        text-align: center
+    }
+
+    header .hailli nav a {
+        top: 10%;
+
+        font-size: 20px;
+        color: #fff;
+        display: block;
+    }
+
+    .menu-trigger {
+        display: block;
+        z-index: 2;
+    }
+
+   .slide {
+        width: 100%;
+    }
+
+    
+    .banner {
+        background: url(../img/116.jpg) no-repeat 20% 50%;
+        background-size: cover;
+        width: 100%;
+        height: 12vw;
+    }
+
+    .banner h2 {
+        position: relative;
+        /*      left: 0; top: 0;
+        transform: translate(-50%, -50%);
+        color: #333333;
+*/
+    }
+
+    .banner img {}
+
+    .banner img:nth-of-type(1) {
+        width: 100%;
+        display: none;
+    }
+
+    .banner img:nth-of-type(2) {
+        width: 5%;
+        position: absolute;
+        top: 20%;
+        left: 56%;
+    }
+    
+    main {}
+
+    .notice {
+        width: 80%;
+    }
+
+    .table {
+        width: 100%;
+    }
+
+    .button {
+        width: 50%;
+        height: 20vw;
+    }
+
+    .button a {
+        width: 50%;
+    }
+
+    .button a:nth-of-type(1) {
+        font-size: 16px;
+    }
+
+    .table table thead td {}
+
+    .table table thead td:nth-of-type(1) {
+        width: 10%;
+    }
+
+    .table table thead td:nth-of-type(3) {
+        width: 10%;
+        display: none;
+    }
+
+    .table table thead td:nth-of-type(4) {
+        width: 20%;
+    }
+
+    .table table thead td:nth-of-type(5) {
+        width: 10%;
+        display: none;
+    }
+
+    .table table tbody th {
+        font-size: 14px;
+    }
+
+    .table table tbody th:nth-of-type(1) {}
+
+    .table table tbody th:nth-of-type(2) {}
+
+    .table table tbody th:nth-of-type(3) {
+        display: none;
+    }
+
+    .table table tbody th:nth-of-type(4) {}
+
+    .table table tbody th:nth-of-type(5) {
+        display: none;
+    }
+
+    .table table tbody tr {}
+
+    .table table tbody tr:nth-of-type(2) img {
+        width: 60%;
+    }
+   
+    
+    /*모바일 하단*/
+    .footer {}
+
+    .h_f {}
+
+    .h_f p {
+        font-size: 14px;
+    }
+
+    .h_f div {}
+
 }

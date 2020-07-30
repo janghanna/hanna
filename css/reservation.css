@@ -132,19 +132,29 @@ header {
 }
 
 .banner h2 {
-
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    
+
     color: #333333;
 }
 
 .banner img {
     width: 100%;
+
 }
 
+.banner img:nth-of-type(1) {
+    width: 100%;
+}
+
+.banner img:nth-of-type(2) {
+    width: 1.5%;
+    position: absolute;
+    top: 39%;
+    left: 52.8%;
+}
 
 
 /**********본문 예약하기**********/
@@ -263,7 +273,8 @@ tbody tr:nth-of-type(7) th small {
 }
 
 tbody tr:nth-of-type(8) {}
-tbody tr th{
+
+tbody tr th {
     width: 120px;
 }
 
@@ -308,8 +319,8 @@ tfoot tr:nth-of-type(3) {
     text-align: center;
     justify-content: center;
     align-content: center;
-    
-    
+
+
 
 }
 
@@ -322,11 +333,13 @@ tfoot tr:nth-of-type(3) {
     text-decoration: none;
     transition: .5s;
 }
-.but .button a:nth-of-type(1):hover{
-     background:#999999;
+
+.but .button a:nth-of-type(1):hover {
+    background: #999999;
 }
-.but .button a:nth-of-type(2):hover{
-     background:#8953A8;
+
+.but .button a:nth-of-type(2):hover {
+    background: #8953A8;
 }
 
 
@@ -377,7 +390,17 @@ tfoot tr:nth-of-type(3) {
 
 .list img {
     width: 100%;
-    margin: 10% auto;
+    margin: 0 auto;
+}
+
+.list img:nth-of-type(1) {
+    width: 20%;
+    margin: 5% auto;
+}
+
+.list img:nth-of-type(2) {
+    width: 100%;
+    margin: 5% auto;
 }
 
 /**********풋터**********/
@@ -413,7 +436,7 @@ footer {
 
 .h_f div a:nth-of-type(2) {}
 
-.h_f > div > p > a> img {
+.h_f > div > p > a > img {
     position: absolute;
     margin-top: 0%;
     left: -50%;
@@ -486,7 +509,7 @@ footer {
         z-index: 2;
     }
 
-    slide {
+    .slide {
         width: 100%;
     }
 
@@ -509,19 +532,31 @@ footer {
 
     .banner h2 {
         font-size: 20px;
-        /*
-        position: absolute;
-        left: 0; top: 0;
+
+        position: relative;
+        /*      left: 0; top: 0;
         transform: translate(-50%, -50%);
         color: #333333;
 */
     }
 
-    .banner img {
+    .banner img {}
+
+    .banner img:nth-of-type(1) {
+        width: 100%;
         display: none;
     }
 
-    main {width: 100%;}
+    .banner img:nth-of-type(2) {
+        width: 5%;
+        position: absolute;
+        top: 35%;
+        left: 60%;
+    }
+
+    main {
+        width: 100%;
+    }
 
     .re {
         height: auto;
@@ -556,7 +591,7 @@ footer {
     }
 
     .tab-head div.active {
-/*        display: block;*/
+        /*        display: block;*/
     }
 
     table {
@@ -567,35 +602,43 @@ footer {
     table tbody {
         width: 100%;
     }
-    tbody tr{
+
+    tbody tr {
         width: 100%;
         font-size: 11px;
-        
+
     }
-    tbody tr th{
-     text-align: center;
+
+    tbody tr th {
+        text-align: center;
     }
-    tbody tr td{
+
+    tbody tr td {
         text-align: start;
     }
-    table tbody tr:nth-of-type(1){}
-    table tbody tr:nth-of-type(1) th{
+
+    table tbody tr:nth-of-type(1) {}
+
+    table tbody tr:nth-of-type(1) th {
         width: 20%;
     }
-    table tbody tr:nth-of-type(1) td{
+
+    table tbody tr:nth-of-type(1) td {
         width: 80%;
     }
-    
-    table tfoot{
+
+    table tfoot {
         width: 100%;
     }
-    table tfoot tr{
+
+    table tfoot tr {
         font-size: 10px;
     }
-    table tfoot tr:nth-of-type(3){
+
+    table tfoot tr:nth-of-type(3) {
         font-size: 15px;
     }
-    
+
 
     .but {
         width: auto;
@@ -623,7 +666,19 @@ footer {
 
     .list img {
         width: 100%;
+        margin: 0 auto;
     }
+
+    .list img:nth-of-type(1) {
+        width: 20%;
+        margin: 5% auto;
+    }
+
+    .list img:nth-of-type(2) {
+        width: 100%;
+        margin: 5% auto;
+    }
+
 
     .footer {}
 
@@ -634,4 +689,289 @@ footer {
     }
 
     .h_f div {}
+}
+
+
+/*---------모바일 765 ~ 1080----------*/
+@media (min-width:765px) and (max-width:1080px) {
+    .all {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .all > .all-m {}
+
+    .all-m {
+        border-radius: 10px;
+        background-color: #ffffff;
+        width: 30%;
+        padding: 1%;
+
+    }
+
+    .all-m > p {
+        font-size: 16px;
+    }
+
+    .all-m > hr {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .all-m > a {
+        font-size: 14px;
+    }
+
+    header {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .hailli {}
+
+    header .hailli .gnb {
+        float: left;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    header .hailli .gnb a {
+        padding: 0 10px;
+    }
+
+    header .hailli h1 {
+        font-size: 3em;
+        clear: both;
+    }
+
+    header nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+
+        display: flex;
+        align-items: center;
+        transform: translateX(100%);
+        transition: .5s;
+        z-index: 1;
+    }
+
+    header nav.active {
+        transform: translateX(0%);
+    }
+
+    header .hailli nav {
+        width: 30%;
+
+        display: block;
+        text-align: center
+    }
+
+    header .hailli nav a {
+        top: 10%;
+
+        font-size: 20px;
+        color: #fff;
+        display: block;
+    }
+
+    .menu-trigger {
+        display: block;
+        z-index: 2;
+    }
+
+    .slide {
+        width: 100%;
+    }
+
+    .banner {
+        background: url(../img/116.jpg) no-repeat 20% 50%;
+        background-size: cover;
+        width: 100%;
+        height: 12vw;
+    }
+
+    .banner h2 {
+        position: relative;
+        /*      left: 0; top: 0;
+        transform: translate(-50%, -50%);
+        color: #333333;
+*/
+    }
+
+    .banner img {}
+
+    .banner img:nth-of-type(1) {
+        width: 100%;
+        display: none;
+    }
+
+    .banner img:nth-of-type(2) {
+        width: 5%;
+        position: absolute;
+        top: 20%;
+        left: 56%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .re {
+        height: auto;
+        width: 100%;
+        overflow: none;
+
+    }
+
+    .re .tab {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .re .tab .tab-head {
+        width: 100%;
+
+    }
+
+    .tab-head div {
+        width: 95%;
+    }
+
+    .re .tab .tab-body {
+        width: 100%;
+    }
+
+    .tab-body a {
+        width: 30%;
+    }
+
+    .tab-body a img {
+        width: 100%;
+    }
+
+    .tab-head div.active {
+        /*        display: block;*/
+    }
+
+    table {
+        float: none;
+        width: 100%;
+    }
+
+    table tbody {
+        width: 100%;
+    }
+
+    tbody tr {
+        width: 100%;
+        font-size: 20px;
+
+    }
+
+    tbody tr th {
+        text-align: right;
+    }
+
+    tbody tr td {
+        text-align: left;
+    }
+
+    table tbody tr:nth-of-type(1) {}
+
+    table tbody tr:nth-of-type(1) th {
+        width: 40%;
+    }
+
+    table tbody tr:nth-of-type(1) td {
+        width: 60%;
+    }
+
+    table tfoot {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    table tfoot tr {
+        font-size: 18px;
+        margin: 0 auto;
+    }
+
+    table tfoot tr th {
+        text-align: right;
+    }
+
+    table tfoot tr td {
+        text-align: center;
+    }
+
+    table tfoot tr:nth-of-type(1) {}
+
+    table tfoot tr:nth-of-type(2) {}
+
+    table tfoot tr:nth-of-type(3) {
+        font-size: 20px;
+    }
+
+    .but {
+        width: auto;
+    }
+
+    .button {
+        width: 100%;
+        height: 20vw;
+    }
+
+    .but .button a {
+        width: 30%;
+        height: auto;
+        font-size: 16px;
+    }
+
+    .list {
+        width: auto;
+    }
+
+    .list header p {
+        width: 100%;
+    }
+
+    .list img {
+    width: 100%;
+    margin: 0 auto;
+}
+.list img:nth-of-type(1){
+    width: 20%;
+    margin: 5% auto;
+}
+.list img:nth-of-type(2){
+     width: 100%;
+    margin: 5% auto;
+}
+
+
+
+
+    /*모바일 하단*/
+    .footer {}
+
+    .h_f {}
+
+    .h_f p {
+        font-size: 14px;
+    }
+
+    .h_f div {}
+
 }
