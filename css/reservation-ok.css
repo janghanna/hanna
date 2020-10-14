@@ -73,13 +73,14 @@ header {
     color: #333333;
 }
 
-.gnb a:hover {
+.gnb a.active {
+    background: #ad74ce;
     text-decoration-line: underline;
 }
 
 .hailli nav {
     width: 100%;
-    background: #333333;
+    background: #333;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -90,26 +91,11 @@ header {
 
 .hailli nav a {
     color: white;
-    text-transform: uppercase;
-    position: relative;
-    text-decoration: none;
 }
 
-.hailli nav a:after {
-    content: '';
-    position: absolute;
-    height: 2px;
-    background-color: white;
-    left: 0;
-    bottom: -5px;
-}
-
-.hailli nav a:hover {
-    color: white;
-}
-
-.hailli nav a:hover:after {
-    width: 100%;
+.hailli nav a.active {
+    background: #ad74ce;
+    text-decoration: underline;
 }
 
 /**********버거**********/
@@ -131,11 +117,11 @@ header {
     background: #ad74ce;
 }
 
-.menu-trigger .active span {
-    background: lightskyblue;
+.menu-trigger.active span {
+    background-color: white;
 }
 
-.munu-trigger .active {
+.munu-trigger.active {
     transform: rotate(90deg);
 }
 
@@ -152,8 +138,6 @@ header {
 .menu-trigger span:nth-of-type(3) {
     bottom: 0%;
 }
-
-
 
 /**********배너**********/
 .banner {
@@ -413,12 +397,12 @@ tfoot tr:nth-of-type(3) {
     align-items: center;
 }
 
-.list header {
+.list .header {
     background: #fcfbe3;
     border-radius: 10px;
 }
 
-.list header p {
+.list .header p {
     color: #333333;
     font-size: 20px;
     padding: 12px 0;
@@ -538,47 +522,67 @@ footer {
         padding: 0 10px;
     }
 
+    header .hailli .gnb a.active {
+        background: #ad74ce;
+        text-decoration-line: underline;
+    }
+
     header .hailli h1 {
         font-size: 2em;
         clear: both;
     }
 
-    header nav {
+    header .haiili nav {
         position: fixed;
         top: 0;
         right: 0;
         height: 100%;
-        background: rgba(0, 0, 0, 0.6);
+        background: rgb(105, 105, 105, 0.9);
 
-        display: flex;
-        align-items: center;
+        width: 20%;
+        display: block;
+        text-align: center;
         transform: translateX(100%);
         transition: .5s;
         z-index: 1;
     }
 
-    header nav.active {
+    header .haiili nav.active {
         transform: translateX(0%);
     }
 
-    header .hailli nav {
-        width: 30%;
-
-        display: block;
-        text-align: center
-    }
-
     header .hailli nav a {
-        top: 10%;
-
+        height: 10%;
         font-size: 12px;
         color: #fff;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header .hailli nav a.active {
+        background: #ad74ce;
+        text-decoration: underline;
     }
 
     .menu-trigger {
         display: block;
         z-index: 2;
+
+        width: 20px;
+        height: 20px;
+        position: fixed;
+        transition: .5s;
+        right: 5vw;
+        top: 5vw;
+    }
+
+    .menu-trigger span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #ad74ce;
     }
 
     .slide {
@@ -731,7 +735,7 @@ footer {
         width: auto;
     }
 
-    .list header p {
+    .list .header p {
         font-size: 15px;
         width: 100%;
     }
@@ -819,47 +823,67 @@ footer {
         padding: 0 10px;
     }
 
+    header .hailli .gnb a.active {
+        background: #ad74ce;
+        text-decoration-line: underline;
+    }
+
     header .hailli h1 {
         font-size: 3em;
         clear: both;
     }
 
-    header nav {
+    header .hailli nav {
         position: fixed;
         top: 0;
         right: 0;
         height: 100%;
-        background: rgba(0, 0, 0, 0.6);
+        background: rgb(105, 105, 105, 0.9);
 
-        display: flex;
-        align-items: center;
+        width: 20%;
+        display: block;
+        text-align: center;
         transform: translateX(100%);
         transition: .5s;
         z-index: 1;
     }
 
-    header nav.active {
+    header .hailli nav.active {
         transform: translateX(0%);
     }
 
-    header .hailli nav {
-        width: 30%;
-
-        display: block;
-        text-align: center
-    }
-
     header .hailli nav a {
-        top: 10%;
-
+        height: 10%;
         font-size: 20px;
         color: #fff;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hailli nav a.active {
+        background: #ad74ce;
+        text-decoration: underline;
     }
 
     .menu-trigger {
         display: block;
         z-index: 2;
+
+        width: 30px;
+        height: 20px;
+        position: fixed;
+        transition: .5s;
+        right: 5vw;
+        top: 5vw;
+    }
+
+    .menu-trigger span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #ad74ce;
     }
 
     .slide {
@@ -1015,7 +1039,7 @@ footer {
         width: auto;
     }
 
-    .list header p {
+    .list .header p {
         width: 100%;
     }
 

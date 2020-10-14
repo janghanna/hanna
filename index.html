@@ -5,67 +5,38 @@
     <meta charset="UTF-8">
     <title>Cafe__HAILLI</title>
     <link href="css/bootstrap-hn.css" rel="stylesheet" type="text/css">
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/slick.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="img/cake.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/head_foot.js"></script>
+    <script src="js/slide.js"></script>
+
 </head>
 
 <body>
     <!-- 헤더고정 -->
-    <header>
-        <div class="hailli">
-            <div class="gnb">
-                <a href="login.html">로그인</a>
-                <a href="member1.html">MY페이지</a>
-                <a href="qna.html">1 : 1문의</a>
-            </div>
-            <a href="index.html">
-                <h1>〈HAILLI〉</h1>
-            </a>
-            <nav>
-                <a href="cafe.html">카페소개</a>
-                <a href="reservation.html">예약하기</a>
-                <a href="review.html">이용후기</a>
-                <a href="notice.html">공지사항</a>
-                <a href=road.html>오시는길</a>
-            </nav>
 
-            <a class="menu-trigger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-        </div>
-    </header>
+    <header></header>
 
-    <script>
-        const menu =
-            document.querySelector('.menu-trigger');
-        const nav = document.querySelector('nav');
-
-        menu.addEventListener('click', function() {
-            menu.classList.toggle('active');
-            nav.classList.toggle('active');
-        });
-    </script>
+    <script></script>
 
     <main>
         <div class="swiper-container">
             <div class="imgs">
-               <a href=reservation.html>
-                <figure>
-                    <img src="img/banner.jpg" alt="">
-                    <img src="img/banner2.jpg" alt="">
+               <figure>
+
+                    <a href="reservation.html"><img src="img/banner.jpg" alt="" class="bn"></a>
+
+                    <a href="reservation.html"><img src="img/banner2.jpg" alt="" class="bn"></a>
+
                 </figure>
-                </a>
             </div>
 
-            <div class="indi">
-                <a>p</a>
-                <a class="active">n</a>
-            </div>
         </div>
 
         <!-----헤더 끝----->
@@ -320,9 +291,9 @@
 
         <!-----베스트후기----->
         <div class="best">
-           <img src="img/h.gif" alt="">
+            <img src="img/h.gif" alt="">
             <h2>BEST 후기</h2>
-            
+
             <p>실제 이용하신 분들의 후기입니다.</p>
             <div class="row b-1">
                 <div class="col-md-4 col-sm-6 col-xs-24">
@@ -402,27 +373,7 @@
     <!-----후기 끝----->
 
     <!-----풋바고정----->
-    <footer>
-        <div class="h_f">
-            <p>업체명 : 하일리
-                사업자 등록번호 : 784-18-00928 사업주 : 최윤혁
-                주소 : 서울시 강동구 성내로3길 18
-                전화번호 : 070-8775-0010</p>
-
-            <div>
-                <a href="https://www.instagram.com/cafe__hailli/" target="_blank">
-                    <img src="img/instagram-fill.png" alt="">
-                </a>
-
-                <a href="https://pf.kakao.com/_xdfxmgT" target="_blank">
-                    <img src="img/kakao-talk-fill.png" alt="">
-                </a>
-                <p>
-                    <a href="http://validator.kldp.org/check?uri=referer" onclick="this.href=this.href.replace(/referer$/,encodeURIComponent(document.URL))"><img src="//validator.kldp.org/w3cimgs/validate/html5-blue.png" alt="Valid HTML 5" height="15" width="80"></a>
-                </p>
-            </div>
-        </div>
-    </footer>
+    <footer></footer>
     <!-----풋바 끝----->
 
 </body></html>

@@ -3,53 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Cafe__HAILLI</title>
     <link href="css/bootstrap-hn.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cafe__HAILLI</title>
     <link href="css/reservation.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="img/cake.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/reservation.js"></script>
+    <script src="js/reservation_price.js"></script>
+    <script src="js/head_foot.js"></script>
 </head>
 
 
 <body>
 
     <!-----헤더고정----->
-    <header>
-        <div class="hailli">
-            <div class="gnb">
-               <a href="login.html">로그인</a>
-                <a href="member1.html">MY페이지</a>
-                <a href="qna.html">1 : 1문의</a>
-            </div>
-            <a href="index.html">
-                <h1>〈HAILLI〉</h1>
-            </a>
-            <nav>
-                <a href="cafe.html">카페소개</a>
-                <a href="reservation.html">예약하기</a>
-                <a href="review.html">이용후기</a>
-                <a href="notice.html">공지사항</a>
-                <a href="road.html">오시는길</a>
-            </nav>
-            <a class="menu-trigger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-        </div>
-    </header>
+    <header></header>
 
-    <script>
-        const menu =
-            document.querySelector('.menu-trigger');
-        const nav = document.querySelector('nav');
-
-        menu.addEventListener('click', function() {
-            menu.classList.toggle('active');
-            nav.classList.toggle('active');
-        });
-
-    </script>
+    <script></script>
     <!-----헤더 끝----->
     <div class="slide">
         <div class="banner">
@@ -62,113 +35,112 @@
     <main>
         <div class="re">
             <div class="tab">
-                <div class="tab-head">
-                    <div class="t-con active">1</div>
-                    <div class="t-con">2</div>
-                    <div class="t-con">3</div>
-                    <div class="t-con">4</div>
-                </div>
                 <div class="tab-body">
-                    <a href="#" class="active"><img src="img/gallery/10.jpg" alt=""></a>
-                    <a href="#"><img src="img/gallery/11.jpg" alt=""></a>
-                    <a href="#"><img src="img/gallery/3.jpg" alt=""></a>
-
+                    <p><img src="img/gallery/2.jpg"></p>
+                    <figure>
+                        <img src="img/gallery/5.jpg" alt="">
+                        <img src="img/gallery/15.jpg" alt="">
+                        <img src="img/gallery/6.jpg" alt="">
+                        <img src="img/gallery/16.jpg" alt="">
+                        <img src="img/gallery/2.jpg" alt="">
+                    </figure>
                 </div>
 
             </div>
-            <table>
-                <tbody>
-<!--
+            <form name="form_1">
+                <table>
+                    <tbody>
+
+                        <!--
                     <col width="120">
                     <col width="*">
 -->
-                    <tr>
-                        <th>방문 예정일 선택</th>
-                        <td>
-                            <input type="date" name="date">
-                            <select name="time">
-                                <option value="time">*방문시간 선택*</option>
-                                <option value="time">10시 ~ 11시</option>
-                                <option value="time">11시 ~ 12시</option>
-                                <option value="time">13시 ~ 14시</option>
-                                <option value="time">14시 ~ 15시</option>
-                                <option value="time">15시 ~ 16시</option>
-                                <option value="time">16시 ~ 17시</option>
-                                <option value="time">17시 ~ 18시</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>케이크 사이즈</th>
-                        <td>
-                            <input type="checkbox" name="size" id="size1"> <label for="size1"> 미니 (11,000원) </label>
-                            <input type="checkbox" name="size" id="size2"> <label for="size2"> 1호 (24,000원) </label>
-                        </td>
+                        <tr>
+                            <th>방문 예정일 선택</th>
+                            <td>
+                                <input type="date" name="date">
+                                <select name="time">
+                                    <option value="time">*방문시간 선택*</option>
+                                    <option value="time">10시 ~ 11시</option>
+                                    <option value="time">11시 ~ 12시</option>
+                                    <option value="time">13시 ~ 14시</option>
+                                    <option value="time">14시 ~ 15시</option>
+                                    <option value="time">15시 ~ 16시</option>
+                                    <option value="time">16시 ~ 17시</option>
+                                    <option value="time">17시 ~ 18시</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>케이크 사이즈</th>
+                            <td>
+                                <input type="radio" name="size" id="size1" value="11000"> <label for="size1"> 미니 (11,000원) </label>
+                                <input type="radio" name="size" id="size2" value="24000"> <label for="size2"> 1호 (24,000원) </label>
+                            </td>
 
-                    </tr>
-                    <tr>
-                        <th>케이크 모양</th>
-                        <td>
-                            <input type="checkbox" name="shape" id="shape1"> <label for="shape1"> 원형 </label>
+                        </tr>
+                        <tr>
+                            <th>케이크 모양</th>
+                            <td>
+                                <input type="radio" name="shape" id="shape1" value="0"> <label for="shape1"> 원형 (+0원) </label>
 
-                            <input type="checkbox" name="shape" id="shape2"> <label for="shape2"> 하트 (+4,000원) </label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>케이크 시트 맛</th>
-                        <td>
-                            <input type="checkbox" name="sheet" id="sheet1"><label for="sheet1"> 바닐라(기본) </label>
-                            <input type="checkbox" name="sheet" id="sheet2"><label for="sheet2"> 초코 </label>
-                            <input type="checkbox" name="sheet" id="sheet3"><label for="sheet3"> 오레오 </label>
-                            <input type="checkbox" name="sheet" id="sheet4"><label for="sheet4"> 얼그레이 </label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>생크림 모양</th>
-                        <td>
-                            <input type="checkbox" name="cream" id="cream1"><label for="cream1"> 기본 </label>
-                            <input type="checkbox" name="cream" id="cream2"><label for="cream2"> 쉘 </label>
-                            <input type="checkbox" name="cream" id="cream3"><label for="cream3"> 리본(+1,000원) </label>
-                            <input type="checkbox" name="cream" id="cream4"><label for="cream4"> 꽃(+3,000원) </label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>케이크 문구</th>
-                        <td><textarea rows="1" cols="50" required placeholder=" 한글 15자, 영어 20자까지 가능합니다. (띄어쓰기 포함)" minlength="1" maxlength="20"></textarea></td>
-                    </tr>
-                    <tr>
-                        <th>추가옵션<br>
-                            <small>(전체 색상변경 ＆ 생크림 모양)</small>
-                        </th>
-                        <td>
-                            <input type="checkbox" name="option" id="option1"><label for="option1"> 색상변경(요청사항 메모) </label>
-                            <input type="checkbox" name="option" id="option2"><label for="option2"> 옵션선택X </label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>요청사항</th>
-                        <td><textarea rows="5" cols="50" required placeholder=" 내용을 입력해주세요."></textarea></td>
-                    </tr>
-                </tbody>
+                                <input type="radio" name="shape" id="shape2" value="4000"> <label for="shape2"> 하트 (+4,000원) </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>케이크 시트 맛</th>
+                            <td>
+                                <input type="radio" name="sheet" id="sheet1" value="100"><label for="sheet1"> 바닐라(기본) </label>
+                                <input type="radio" name="sheet" id="sheet2" value="200"><label for="sheet2"> 초코 </label>
+                                <input type="radio" name="sheet" id="sheet3" value="0"><label for="sheet3"> 오레오 </label>
+                                <input type="radio" name="sheet" id="sheet4" value="0"><label for="sheet4"> 얼그레이 </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>생크림 모양</th>
+                            <td>
+                                <input type="checkbox" name="cream" id="cream1" value="0"><label for="cream1"> 기본 (+0원) </label>
+                                <input type="checkbox" name="cream" id="cream2" value="0"><label for="cream2"> 쉘 (+0원)</label>
+                                <input type="checkbox" name="cream" id="cream3" value="1000"><label for="cream3"> 리본(+1,000원) </label>
+                                <input type="checkbox" name="cream" id="cream4" value="3000"><label for="cream4"> 꽃(+3,000원) </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>케이크 문구</th>
+                            <td><textarea rows="1" cols="50" required placeholder=" 한글 15자, 영어 20자까지 가능합니다. (띄어쓰기 포함)" minlength="1" maxlength="20"></textarea></td>
+                        </tr>
+                        <tr>
+                            <th>추가옵션<br>
+                                <small>(전체 색상변경 ＆ 생크림 모양)</small>
+                            </th>
+                            <td>
+                                <input type="radio" name="option" id="option1" value="0"><label for="option1"> 색상변경 (요청사항 메모) </label>
+                                <input type="radio" name="option" id="option2" value="0"><label for="option2"> 추가옵션X </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>요청사항</th>
+                            <td><textarea rows="5" cols="50" required placeholder=" 내용을 입력해주세요."></textarea></td>
+                        </tr>
 
-                <tfoot>
-                    <tr>
-                        <th>상품금액</th>
-                        <td>24,000원</td>
-                    </tr>
-                    <tr>
-                        <th>옵션</th>
-                        <td>+4,000원</td>
-                    </tr>
-                    <tr>
-                        <th>총 결제금액</th>
-                        <td>28,000원</td>
-                    </tr>
-                </tfoot>
+                    </tbody>
 
-
-            </table>
-
+                    <tfoot>
+                        <tr>
+                            <th>상품금액</th>
+                            <td><input type="text" name="sum1" size="11" readonly>원</td>
+                        </tr>
+                        <tr>
+                            <th>옵션</th>
+                            <td><input type="text" name="sum2" size="11" readonly>원</td>
+                        </tr> 
+                        <tr>
+                            <th>총 결제금액</th>
+                            <td><input type="text" name="sum4" size="11" readonly>원</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </form>
         </div>
 
         <!-----버튼----->
@@ -183,9 +155,9 @@
         <!-----상세설명시작----->
 
         <div class="list">
-            <header>
+            <div class="header">
                 <p>제품 상세 설명</p>
-            </header>
+            </div>
             <img src="img/stbc.gif" alt="">
             <img src="img/list.jpg" alt="">
         </div>
@@ -193,27 +165,7 @@
         <!-----상세설명 끝----->
     </main>
     <!-----풋바고정----->
-     <footer>
-        <div class="h_f">
-            <p>업체명 : 하일리
-                사업자 등록번호 : 784-18-00928 사업주 : 최윤혁
-                주소 : 서울시 강동구 성내로3길 18
-                전화번호 : 070-8775-0010</p>
-
-            <div>
-                <a href="https://www.instagram.com/cafe__hailli/" target="_blank">
-                    <img src="img/instagram-fill.png" alt="">
-                </a>
-
-                <a href="https://pf.kakao.com/_xdfxmgT" target="_blank">
-                    <img src="img/kakao-talk-fill.png" alt="">
-                </a>
-                <p>
-                    <a href="http://validator.kldp.org/check?uri=referer" onclick="this.href=this.href.replace(/referer$/,encodeURIComponent(document.URL))"><img src="//validator.kldp.org/w3cimgs/validate/html5-blue.png" alt="Valid HTML 5" height="15" width="80"></a>
-                </p>
-            </div>
-        </div>
-    </footer>
+    <footer></footer>
     <!-----풋바 끝----->
 
 </body>

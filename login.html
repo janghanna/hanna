@@ -1,58 +1,36 @@
+<?php
+    @session_start();
+    $name = $_SESSION['name']; 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Cafe__HAILLI</title>
-
-    <link rel="stylesheet" href="css/login.css" type="text/css">
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="css/bootstrap-hn.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>cafe. HAILLI </title>
+    <link rel="stylesheet" href="css/login.css" type="text/css">
     <link rel="icon" href="img/cake.png">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/head_foot.js"></script>
 
 </head>
 
 <body>
     <!-----헤더고정----->
-    <header>
-        <div class="hailli">
-            <div class="gnb">
-                <a href="login.html">로그인</a>
-                <a href="member1.html">MY페이지</a>
-                <a href="qna.html">1 : 1문의</a>
-            </div>
-            <a href="index.html">
-                <h1>〈HAILLI〉</h1>
-            </a>
-            <nav>
-                <a href="cafe.html">카페소개</a>
-                <a href="reservation.html">예약하기</a>
-                <a href="review.html">이용후기</a>
-                <a href="notice.html">공지사항</a>
-                <a href=road.html>오시는길</a>
-            </nav>
+    <header></header>
 
-            <a class="menu-trigger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-        </div>
-    </header>
-
-    <script>
-        const menu =
-            document.querySelector('.menu-trigger');
-        const nav = document.querySelector('nav');
-
-        menu.addEventListener('click', function() {
-            menu.classList.toggle('active');
-            nav.classList.toggle('active');
-        });
-    </script>
+    <script></script>
 
     <main>
         <div class="login">
             <form>
                 <div class="form">
+                <!--회원-->
                     <h1>
                         회원 로그인
                     </h1>
@@ -71,29 +49,69 @@
             </form>
         </div>
     </main>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        if ($('a').hasClass('login')) {
+            var loginBtn = document.querySelector('.login');
+            loginBtn.addEventListener('click', login);
+        } else {
+            var loginBtn = document.querySelector('.logout');
+            loginBtn.addEventListener('click', logout);
+        }
+
+
+        function login(e) {
+            e.preventDefault();
+
+            var idValue = document.querySelector('input[name=id').value;
+            var pwValue = document.querySelector('input[name=password]').value;
+
+            $.ajax({
+                url: 'login_data.php',
+                type: 'get',
+                data: {
+                    id: idValue,
+                    pw: pwValue
+                },
+                success: function(data) {
+
+//                    $('div p').show();
+//
+//                    if (data.trim === 'success') {
+//                        $('div p').eq(0).hide();
+//                    } else {
+//                        $('div p').eq(1).hide();
+//                    }
+                    
+                    if(data.trim() === 'id_fail'){
+                        alert('가입된 정보가 없습니다ㅠㅠ');
+                    }else if(data.trim() === 'pw_fail'){
+                        alert('비밀번호가 틀렸습니다ㅠㅠ');
+                    }else{
+                        location.reload();
+                    }
+                }
+            });
+        }
+        
+        function logout(e){
+            e.preventDefault();
+            
+            $.ajax({
+                url: 'logout.php',
+                type: 'get',
+                success: function(data){
+                    location.reload();
+                }
+            });
+        }
+
+    </script>
 
     <!-----풋바고정----->
-     <footer>
-        <div class="h_f">
-            <p>업체명 : 하일리
-                사업자 등록번호 : 784-18-00928 사업주 : 최윤혁
-                주소 : 서울시 강동구 성내로3길 18
-                전화번호 : 070-8775-0010</p>
-
-            <div>
-                <a href="https://www.instagram.com/cafe__hailli/" target="_blank">
-                    <img src="img/instagram-fill.png" alt="">
-                </a>
-
-                <a href="https://pf.kakao.com/_xdfxmgT" target="_blank">
-                    <img src="img/kakao-talk-fill.png" alt="">
-                </a>
-                <p>
-                    <a href="http://validator.kldp.org/check?uri=referer" onclick="this.href=this.href.replace(/referer$/,encodeURIComponent(document.URL))"><img src="//validator.kldp.org/w3cimgs/validate/html5-blue.png" alt="Valid HTML 5" height="15" width="80"></a>
-                </p>
-            </div>
-        </div>
-    </footer>
+     <footer></footer>
     <!-----풋바 끝----->
 
 </body></html>

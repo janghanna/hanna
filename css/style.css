@@ -1,0 +1,144 @@
+@import url('common.css');
+
+header{
+    width: 1920px;
+    height: 100%;
+    background-color: white;
+    
+}
+.hailli{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10% auto;
+    overflow: hidden;
+    
+}
+.hailli h1{
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 50px;
+    letter-spacing: 3px;
+    color: #333333;
+    padding: 2.5%;
+}
+.gnb{
+    float: right;
+    display: inline-block;
+    padding: 0 40px;
+    font-size: 15px;
+    
+}
+.gnb a{
+    width: 1080px;
+    padding: 0 30px;    
+    color: #333333;
+}
+
+.gnb a:hover{
+    text-decoration-line: underline;
+}
+
+.hailli nav{
+    width: 100%;
+    background: #777777;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 3;
+    font-size: 20px;
+    word-spacing: 200px;
+}
+.hailli nav a{
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+}
+.hailli nav a:after{
+    content: '';
+    position: absolute;
+    height: 2px; 
+    background-color: white;
+    left: 0; bottom:-5px;
+}
+.hailli nav a:hover{
+    color: white;
+}
+.hailli nav a:hover:after{
+    width: 65px;
+    left: 0%;
+}
+
+/*배너*/
+main{}
+main .banner{
+    padding: 5%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #fcfbe3;
+    background: url(../img/사각형116.jpg);
+}
+.banner p{
+    color: #333333;
+    font-size: 40px;
+    line-height: 0.75;
+}
+
+/*공지사항 표*/
+table{
+    margin: 0 auto;
+    width: 1080px;
+}
+.h_t{}
+.h_t table{}
+.h_t tr{}
+.h_t tr:nth-child(1){
+    background-color: #ededed;
+    
+}
+.h_t tr td{
+    text-align: center;
+}
+.h_t tr th{
+    text-align: left;
+}
+
+/*글쓰기 버튼*/
+.h_b{}
+.h_b button{
+    float: right;
+    background-color: #ad74ce;
+    width: 150px; height: 40px;
+    border-radius: 10px;
+}
+.h_b button a{
+    color: white;
+    font-size: 15px;
+    font-family: 'THEBalsamtint';
+}
+
+
+/*풋터*/
+footer{
+    width: 100%;
+    padding: 1%;
+    background-color: #333333;
+    overflow: hidden;
+}
+footer .h_f{
+    width: 1080px;
+    margin: 0 auto;
+}
+footer p{
+    white-space: pre-line;
+    text-align: left;
+    color: #777777;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+footer a{
+    width: 24px; height: 24px;
+    float: right;}

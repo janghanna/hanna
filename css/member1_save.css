@@ -1,34 +1,38 @@
 @import url('common-hn.css');
 
-.all{
+.all {
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
 }
-.all > .all-m{}
-.all-m{
+
+.all > .all-m {}
+
+.all-m {
     border-radius: 10px;
     background-color: #ffffff;
     width: 350px;
     padding: 20px;
-    
+
     text-align: center;
     line-height: 2;
 }
-.all-m > p{
+
+.all-m > p {
     font-size: 18px;
     padding: 10px;
 }
-.all-m > hr{
+
+.all-m > hr {
     width: 300px;
 }
 
-.all-m > a{
+.all-m > a {
     font-size: 15px;
 }
 
@@ -70,13 +74,14 @@ header {
     color: #333333;
 }
 
-.gnb a:hover {
+.gnb a.active {
+    background: #ad74ce;
     text-decoration-line: underline;
 }
 
 .hailli nav {
     width: 100%;
-    background: #333333;
+    background: #333;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -87,31 +92,57 @@ header {
 
 .hailli nav a {
     color: white;
-    text-transform: uppercase;
-    position: relative;
-    text-decoration: none;
 }
 
-.hailli nav a:after {
-    content: '';
+.hailli nav a.active {
+    background: #ad74ce;
+    text-decoration: underline;
+}
+
+/**********버거**********/
+.menu-trigger {
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    transition: .5s;
+    right: 5vw;
+    top: 5vw;
+    display: none;
+}
+
+.menu-trigger span {
     position: absolute;
-    height: 2px;
-    background-color: white;
     left: 0;
-    bottom: -5px;
-}
-
-.hailli nav a:hover {
-    color: white;
-}
-
-.hailli nav a:hover:after {
     width: 100%;
+    height: 2px;
+    background: #ad74ce;
+}
+
+.menu-trigger.active span {
+    background-color: white;
+}
+
+.munu-trigger.active {
+    transform: rotate(90deg);
+}
+
+.menu-trigger span:nth-of-type(1) {
+    top: 0;
+}
+
+.menu-trigger span:nth-of-type(2) {
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.menu-trigger span:nth-of-type(3) {
+    bottom: 0%;
 }
 
 
-body{
-    position:relative;
+body {
+    position: relative;
 }
 
 main {
@@ -164,37 +195,44 @@ main {
 }
 
 /*회원정보*/
-.info{
+.info {
     text-align: center;
-    width:80%;
-    margin:40px auto;
-    padding:0 50px;
+    width: 80%;
+    margin: 40px auto;
+    padding: 0 50px;
 }
-.info h2{
-    font-size:25px;
-    margin-bottom:35px;
-    text-align: center;
-}
-.info form{}
 
-.edit{}
-.edit ul{}
-.edit ul li{
-    font-size:15px;
-    padding:7px 0;
+.info h2 {
+    font-size: 25px;
+    margin-bottom: 35px;
+    text-align: center;
 }
-.edit ul li label{
+
+.info form {}
+
+.edit {}
+
+.edit ul {}
+
+.edit ul li {
+    font-size: 15px;
+    padding: 7px 0;
+}
+
+.edit ul li label {
     margin-right: 20px;
-    width:100px;
+    width: 100px;
     text-align: right;
-    display:inline-block;
+    display: inline-block;
 }
-.edit ul li span{
-    width:50%;
-    display:inline-block;
+
+.edit ul li span {
+    width: 50%;
+    display: inline-block;
     text-align: left;
 }
-.edit ul li > input{
+
+.edit ul li > input {
     background: #ededed;
     width: 50%;
     outline-style: none;
@@ -205,29 +243,21 @@ main {
 }
 
 /*회원정보-전화번호*/
-.phone{}
-.phone label{}
-.phone select{
+.phone {}
+
+.phone label {}
+
+.phone input {
     outline-style: none;
-    margin-bottom: 10px;
-    width: 12%;
+    width: 40%;
     padding: 14px 20px;
     background: #ededed;
     border: none;
     border-radius: 10px;
     font-size: 15px;
 }
-.phone select option{}
-.phone input{
-    outline-style: none;
-    width: 13%;
-    padding: 14px 20px;
-    background: #ededed;
-    border: none;
-    border-radius: 10px;
-    font-size: 15px;
-}
-.phone input:nth-of-type(3) {
+
+.phone input:nth-of-type(2) {
     width: 10%;
     background: #666;
     color: #fff;
@@ -236,23 +266,23 @@ main {
     padding: 12px 20px;
 }
 
-.phone input:nth-of-type(3):hover {
+.phone input:nth-of-type(2):hover {
     background: #444;
 }
 
 /*취소, 저장버튼*/
-.info a{
-    display:inline-block;
-    background:#ad74ce;
-    color:#fff;
-    padding:8px 60px;
+.info a {
+    display: inline-block;
+    background: #ad74ce;
+    color: #fff;
+    padding: 8px 60px;
     border-radius: 10px;
-    transition:.5s;
-    margin-top:40px;
+    transition: .5s;
+    margin-top: 40px;
 }
 
-.info a:hover{
-    background:#8953a8;
+.info a:hover {
+    background: #8953a8;
 }
 
 
@@ -307,6 +337,7 @@ footer {
         margin-left: 0%;
     }
 }
+
 /*---------모바일 480----------*/
 
 
@@ -344,7 +375,7 @@ footer {
     .all-m > a {
         font-size: 15px;
     }
-    
+
     header {
 
         display: flex;
@@ -364,47 +395,67 @@ footer {
         padding: 0 10px;
     }
 
+    header .hailli .gnb a.active {
+        background: #ad74ce;
+        text-decoration-line: underline;
+    }
+
     header .hailli h1 {
         font-size: 2em;
         clear: both;
     }
 
-    header nav {
+    header .haiili nav {
         position: fixed;
         top: 0;
         right: 0;
         height: 100%;
-        background: rgba(0, 0, 0, 0.6);
+        background: rgb(105, 105, 105, 0.9);
 
-        display: flex;
-        align-items: center;
+        width: 20%;
+        display: block;
+        text-align: center;
         transform: translateX(100%);
         transition: .5s;
         z-index: 1;
     }
 
-    header nav.active {
+    header .haiili nav.active {
         transform: translateX(0%);
     }
 
-    header .hailli nav {
-        width: 30%;
-
-        display: block;
-        text-align: center
-    }
-
     header .hailli nav a {
-        top: 10%;
-
+        height: 10%;
         font-size: 12px;
         color: #fff;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header .hailli nav a.active {
+        background: #ad74ce;
+        text-decoration: underline;
     }
 
     .menu-trigger {
         display: block;
         z-index: 2;
+
+        width: 20px;
+        height: 20px;
+        position: fixed;
+        transition: .5s;
+        right: 5vw;
+        top: 5vw;
+    }
+
+    .menu-trigger span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #ad74ce;
     }
 
     main {
@@ -508,35 +559,23 @@ footer {
     .phone {}
 
     .phone label {}
-
-    .phone select {
-        outline-style: none;
-        margin-bottom: 10px;
-        width: 18%;
-        padding: 5px;
-        background: #ededed;
-        border: none;
-        border-radius: 10px;
-        font-size: 12px;
-    }
-
-    .phone select option {}
-
+    
     .phone input {
-        width: 18%;
+        width: 50%;
         padding: 5px;
         font-size: 12px;
+        margin-bottom: 3px;
     }
 
-    .phone input:nth-of-type(3) {
+    .phone input:nth-of-type(2) {
         display: block;
-        margin-left: 46%;
+        margin-left: 44%;
         font-size: 12px;
         width: 50%;
-        padding: 10px;
+        padding: 5px;
     }
 
-    .phone input:nth-of-type(3):hover {
+    .phone input:nth-of-type(2):hover {
         background: #444;
     }
 
@@ -567,7 +606,7 @@ footer {
 
 /*---------모바일 765 ~ 1080----------*/
 @media (min-width:765px) and (max-width:1080px) {
-   .all {
+    .all {
         width: 100%;
         height: 100%;
         background: rgba(0, 0, 0, 0.6);
@@ -620,50 +659,70 @@ footer {
         padding: 0 10px;
     }
 
+    header .hailli .gnb a.active {
+        background: #ad74ce;
+        text-decoration-line: underline;
+    }
+
     header .hailli h1 {
         font-size: 3em;
         clear: both;
     }
 
-    header nav {
+    header .hailli nav {
         position: fixed;
         top: 0;
         right: 0;
         height: 100%;
-        background: rgba(0, 0, 0, 0.6);
+        background: rgb(105, 105, 105, 0.9);
 
-        display: flex;
-        align-items: center;
+        width: 20%;
+        display: block;
+        text-align: center;
         transform: translateX(100%);
         transition: .5s;
         z-index: 1;
     }
 
-    header nav.active {
+    header .hailli nav.active {
         transform: translateX(0%);
     }
 
-    header .hailli nav {
-        width: 30%;
-
-        display: block;
-        text-align: center
-    }
-
     header .hailli nav a {
-        top: 10%;
-
+        height: 10%;
         font-size: 20px;
         color: #fff;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hailli nav a.active {
+        background: #ad74ce;
+        text-decoration: underline;
     }
 
     .menu-trigger {
         display: block;
         z-index: 2;
+
+        width: 30px;
+        height: 20px;
+        position: fixed;
+        transition: .5s;
+        right: 5vw;
+        top: 5vw;
     }
 
-     main {
+    .menu-trigger span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #ad74ce;
+    }
+
+    main {
         width: 100%;
     }
 
@@ -764,26 +823,14 @@ footer {
 
     .phone label {}
 
-    .phone select {
-        outline-style: none;
-        margin-bottom: 10px;
-        width: 16%;
-        padding:10px;
-        background: #ededed;
-        border: none;
-        border-radius: 10px;
-        font-size: 14px;
-    }
-
-    .phone select option {}
-
     .phone input {
-        width: 16%;
+        width: 50%;
         padding: 10px;
         font-size: 14px;
+        margin-bottom: 3px;
     }
 
-    .phone input:nth-of-type(3) {
+    .phone input:nth-of-type(2) {
         display: block;
         margin-left: 33%;
         font-size: 14px;
@@ -791,7 +838,7 @@ footer {
         padding: 10px;
     }
 
-    .phone input:nth-of-type(3):hover {
+    .phone input:nth-of-type(2):hover {
         background: #444;
     }
 
@@ -807,7 +854,7 @@ footer {
     }
 
 
-    
+
     /*모바일 하단*/
     .footer {}
 
