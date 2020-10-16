@@ -106,13 +106,11 @@ header {
 
 main {
     margin: 0 auto;
-    width: 1080px;
-    height: auto;
+    width: 70%;
 }
 
 .member {
-    display: flex;
-    height: 100%;
+    display: flex;   
 }
 
 .menu {
@@ -120,6 +118,7 @@ main {
     padding: 50px 0px;
     text-align: right;
     width: 20%;
+    min-height:66vh;
 }
 
 .menu h1 {
@@ -358,7 +357,7 @@ footer {
 
     .menu ul li a {
         display: block;
-        font-size: 14px;
+        font-size: 12px;
         padding: 15px 10px;
         position: relative;
         color: #666;

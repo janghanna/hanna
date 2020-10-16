@@ -107,12 +107,11 @@ header {
 
 main {
     margin: 0 auto;
-    width: 1080px;
+    width: 70%;
 }
 
 .member {
-    display: flex;
-    height: 100%;
+    display: flex;    
 }
 
 .menu {
@@ -120,6 +119,7 @@ main {
     padding: 50px 0px;
     text-align: right;
     width: 20%;
+    min-height:66vh;
 }
 
 .menu h1 {
@@ -209,7 +209,7 @@ main {
 
 .phone input {
     outline-style: none;
-    width: 40%;
+    width: 50%;
     padding: 14px 20px;
     background: #ededed;
     border: none;
@@ -217,17 +217,25 @@ main {
     font-size: 15px;
 }
 
+/* 인증버튼 */
 .phone input:nth-of-type(2) {
-    width: 10%;
+    display:inline;
+    width: 50%;
     background: #666;
     color: #fff;
     cursor: pointer;
     transition: .5s;
-    padding: 12px 20px;
+    padding: 14px 20px;
+    margin-top: 2%;
+    margin-left: 18%;
 }
 
 .phone input:nth-of-type(2):hover {
     background: #444;
+}
+  /* 인증번호 */
+  .edit ul li:nth-of-type(7) input{
+    width:50%;
 }
 
 /*취소, 저장버튼*/
@@ -398,11 +406,10 @@ footer {
         background: #ededed;
         padding: 50px 0px;
         text-align: right;
-        width: 15%;
     }
 
     .menu h1 {
-        font-size: 10px;
+        font-size: 16px;
         margin-bottom: 40px;
         padding-right: 10px;
     }
@@ -413,7 +420,7 @@ footer {
 
     .menu ul li a {
         display: block;
-        font-size: 10px;
+        font-size: 12px;
         padding: 15px 10px;
         position: relative;
         color: #666;
@@ -436,73 +443,88 @@ footer {
     /*회원정보*/
     .info {
         text-align: center;
-        width: 85%;
-        padding: 0;
+        width: 75%;
+        padding: 0%;
     }
 
     .info h2 {
-        font-size: 15px;
+        font-size: 25px;
         margin-bottom: 35px;
         text-align: center;
     }
 
     .info form {}
 
-    .edit {}
+    .edit {width: 100%;}
 
-    .edit ul {}
+    .edit ul {width: 100%;}
 
     .edit ul li {
-        font-size: 12px;
-        margin: 0 auto;
+        /* font-size: 12px; */
+        /* margin: 0 auto; */
         padding: 5px 10px;
     }
-
-    .edit ul li label {
-        margin-right: 20px;
-        width: 100px;
-        text-align: center;
-        display: inline-block;
+    .edit ul li label{
+        display: none;
     }
+    /* .edit ul li label {
+        margin-right: 0px;
+        width: 50px;
+        text-align: center;
+        padding-left: auto;
+        padding-right: auto;
+        display: inline-flex;
+    } */
 
     .edit ul li span {
-        width: 50%;
+        width: 90%;
         display: inline-block;
         text-align: left;
     }
 
-    .edit ul li > input {
-        background: #ededed;
-        width: 50%;
+    .edit ul li input {
+        background: none;
+        width: 90%;
         outline-style: none;
-        border: none;
-        font-size: 12px;
-        padding: 15px;
+        /* border: 1px solid red; */
+        border-bottom: 2px solid orange;
+        font-size: 13px;
+        padding: 10px;
         border-radius: 10px;
     }
+
 
     /*회원정보-전화번호*/
     .phone {}
 
-    .phone label {}
+    .phone label {
+        display: none;
+    }
     
     .phone input {
         width: 50%;
         padding: 5px;
         font-size: 12px;
-        margin-bottom: 3px;
     }
 
+    /* 폰번호 */
+    .phone input:nth-of-type(1){
+        width: 60%;
+    }
+    /* 인증버튼 */
     .phone input:nth-of-type(2) {
-        display: block;
-        margin-left: 44%;
-        font-size: 12px;
-        width: 50%;
+        font-size: 15px;
+        width:30%;
         padding: 5px;
+        margin: 3px 0;
     }
-
     .phone input:nth-of-type(2):hover {
         background: #444;
+    }
+    
+    /* 인증번호 */
+    .edit ul li:nth-of-type(7) input{
+        width:90%;
     }
 
     /*취소, 저장버튼*/
