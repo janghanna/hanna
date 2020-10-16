@@ -107,7 +107,7 @@ header {
 main {
     margin: 0 auto;
     width: 1080px;
-    height: 700px;
+    
 }
 
 .member {
@@ -344,11 +344,10 @@ footer {
         background: #ededed;
         padding: 50px 0px;
         text-align: right;
-        width: 15%;
     }
 
     .menu h1 {
-        font-size: 10px;
+        font-size: 16px;
         margin-bottom: 40px;
         padding-right: 10px;
     }
@@ -359,7 +358,7 @@ footer {
 
     .menu ul li a {
         display: block;
-        font-size: 10px;
+        font-size: 14px;
         padding: 15px 10px;
         position: relative;
         color: #666;
@@ -381,11 +380,11 @@ footer {
 
     .cart {
         padding: 0;
-        width: 85%;
+        width: 75%;
     }
 
     .cart h2 {
-        font-size: 15px;
+        font-size: 25px;
         margin-bottom: 35px;
         text-align: center;
     }
@@ -404,7 +403,7 @@ footer {
     .tab a {
         width: auto;
         font-size: 10px;
-        padding: 10px;
+        padding: 10px; 
 
     }
 

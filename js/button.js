@@ -18,4 +18,3 @@ for (i = 0; i < btns.length; i++){
 3. 현재 존재하고있는 클래스의 이름을 ''으로 대체합니다(제거합니다)
 4. this 는 현재 클릭하는 btns 중 하나이고, btns 중 하나를 클릭시 'on'이라는 클래스를 추가합니다.
 */
-[출처] [ Javascript ] Active button|작성자 영기

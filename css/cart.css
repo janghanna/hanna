@@ -109,7 +109,6 @@ header {
 main {
     margin: 0 auto;
     width: 1080px;
-    height: 700px;
 }
 
 .member {
@@ -189,7 +188,9 @@ main {
     background: #ededed;
 }
 
-.tab div span {}
+.tab div span input{
+    border: none;
+}
 
 .tab div span a {
     background: none;
@@ -215,26 +216,23 @@ main {
     color: #333;
     font-size: 15px;
     padding: 12px;
+    text-align: center;
 }
 
 .cart_table thead th:nth-of-type(1) {
-    width: 2%;
+    width: 30%;
 }
 
 .cart_table thead th:nth-of-type(2) {
-    width: 20%;
-}
-
-.cart_table thead th:nth-of-type(3) {
     width: 40%;
 }
 
-.cart_table thead th:nth-of-type(4) {
-    width: 8%;
+.cart_table thead th:nth-of-type(3) {
+    width: 10%;
 }
 
-.cart_table thead th:nth-of-type(5) {
-    width: 10%;
+.cart_table thead th:nth-of-type(4) {
+    width: 20%;
 }
 
 .cart_table tbody {}
@@ -249,13 +247,12 @@ main {
 }
 
 .cart_table tbody td img {
-    width: 100px;
+    width: 100%;
     border-radius: 10px;
 }
 
 .cart_table tbody td a {
     font-size: 15px;
-    padding-left: 15px;
     color: #333;
 }
 
@@ -273,22 +270,52 @@ main {
 
 }
 
-.cart_table tbody td:nth-of-type(2) {
-    display: flex;
+.cart_table tbody td:nth-of-type(1) {
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
-.cart_table tbody td:nth-of-type(3) {
+.cart_table tbody td:nth-of-type(2) {
     text-overflow: ellipsis;
     line-height: 1.5;
+}
+.cart_table tbody td:nth-of-type(3) p input{
+    width: 100%;
+    text-align: center;
+    
+}
+.cart_table tbody td:nth-of-type(3) p {
+    width: 100%;  
+}
+
+.cart_table tbody td:nth-of-type(3) p .pluse{
+    width:100%;
+    background: none;
+    border: none;    
+}
+.cart_table tbody td:nth-of-type(3) p .minus{
+    width: 100%;
+    background: none;
+    border: none;
+}
+.cart_table tbody td:nth-of-type(3) p img{
+    width: 50%;
+    padding: 0;
+}
+
+.cart_table tbody td:nth-of-type(4) p input{
+    width: 80%;
+    border: none;
 }
 
 .total {
     display: flex;
 }
 
-.total span {}
+.total span input{
+    border: none;
+}
 
 .total span:nth-of-type(1) {
     margin-left: 60%;
@@ -373,7 +400,6 @@ footer {
 
 @media (max-width:480px) {
     header {
-
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -468,11 +494,10 @@ footer {
         background: #ededed;
         padding: 50px 0px;
         text-align: right;
-        width: 15%;
     }
 
     .menu h1 {
-        font-size: 10px;
+        font-size: 16px;
         margin-bottom: 40px;
         padding-right: 10px;
     }
@@ -483,7 +508,7 @@ footer {
 
     .menu ul li a {
         display: block;
-        font-size: 10px;
+        font-size: 14px;
         padding: 15px 10px;
         position: relative;
         color: #666;
@@ -505,11 +530,12 @@ footer {
 
     .cart {
         padding: 0;
-        width: 85%;
+        width:75%;
+
     }
 
     .cart h2 {
-        font-size: 15px;
+        font-size: 25px;
         margin-bottom: 35px;
         text-align: center;
     }
@@ -525,7 +551,7 @@ footer {
     }
 
     .tab div label {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .tab div label input {
@@ -535,9 +561,8 @@ footer {
     }
 
     .tab div span {
-        font-size: 10px;
+        font-size: 12px;
     }
-
     .tab div span a {
         background: none;
         border: none;
@@ -546,6 +571,7 @@ footer {
         vertical-align: middle;
     }
 
+
     .cart_table {
         border-spacing: 0;
         border-radius: 10px;
@@ -553,46 +579,24 @@ footer {
         width: 100%;
     }
 
-    .cart_table thead {}
+    .cart_table thead {
+        display: none;    
+        }
 
-    .cart_table thead tr {}
-
-    .cart_table thead th {
-        background: #ededed;
-        color: #333;
-        font-size: 10px;
-        padding: 12px;
-    }
-
-    .cart_table thead th:nth-of-type(1) {
-        width: 5%;
-    }
-
-    .cart_table thead th:nth-of-type(2) {
-        width: 20%;
-    }
-
-    /*
-    .cart_table thead th:nth-of-type(3) {
-        width: %;
-    }
-*/
-
-    .cart_table thead th:nth-of-type(4) {
-        width: 15%;
-    }
-
-    .cart_table thead th:nth-of-type(5) {
-        width: 20%;
-    }
-
-    .cart_table tbody {}
-
-    .cart_table tbody tr {}
-
-    .cart_table tbody td {
+    .cart_table tr{
+        display:block; 
+        border-top: double;
         border-bottom: double;
         border-color: #ededed;
+    }
+
+    .cart_table th, td{display: block;}
+
+    .cart_table tbody {
+        width: 100%;
+    }
+    .cart_table tbody td {
+        border-bottom:1px solid #ededed;
         text-align: left;
     }
 
@@ -602,14 +606,15 @@ footer {
     }
 
     .cart_table tbody td a {
-        font-size: 10px;
+        font-size: 15px;
+        text-align: center;
         padding: 0;
         color: #333;
         line-height: 2;
     }
 
     .cart_table tbody td p {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .cart_table tbody td p input {
@@ -620,41 +625,58 @@ footer {
         outline: none;
         cursor: pointer;
         text-align: center;
-        font-size: 10px;
+        font-size: 20px;
 
     }
 
     .cart_table tbody tr td:nth-of-type(1) input {
-        width: 100%;
-    }
-
-    .cart_table tbody td:nth-of-type(2) {
         display: block;
-        align-items: center;
-        justify-content: center;
+    }
+    .cart_table tbody tr td:nth-of-type(1){
+        
+    }
+    .cart_table tbody td:nth-of-type(2) p{
+        text-overflow: ellipsis;
+        line-height: 1.5;
+        font-size: 14px;
+        
     }
 
     .cart_table tbody td:nth-of-type(3) {
-        text-overflow: ellipsis;
-        line-height: 1.5;
+      width: 100%;
+      text-align: center;
+    }
+    .cart_table tbody td:nth-of-type(3) p{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .cart_table tbody td:nth-of-type(3) p input{
+       width: 30%; 
+       font-size: 15px;
+    }
+    .cart_table tbody td:nth-of-type(3) p img{
+        width: 10%;
+    }
+    .cart_table tbody td:nth-of-type(4){
+        width: 100%;
+        
     }
 
     .total {
-        display: flex;
+        border-bottom: 1px solid #ededed;
+        margin: 10% 0;
     }
-
-    .total span {}
 
     .total span:nth-of-type(1) {
-        margin-left: 60%;
+       display: none;
     }
 
-    .tab > a {
-        width: auto;
-        font-size: 10px;
-        padding: 10px;
+    .total span:nth-of-type(2){
+        font-size: 15px;
     }
-
+    .total span:nth-of-type(3){
+        font-size: 15px;
+    }
     .tab > a:hover {
         background: #8953A8;
     }
@@ -864,32 +886,10 @@ footer {
     .cart_table thead th {
         background: #ededed;
         color: #333;
-        font-size: 14px;
+        font-size: 15px;
         padding: 12px;
+        text-align: center;
     }
-
-    .cart_table thead th:nth-of-type(1) {
-        width: 5%;
-    }
-
-    .cart_table thead th:nth-of-type(2) {
-        width: 20%;
-    }
-
-    /*
-    .cart_table thead th:nth-of-type(3) {
-        width: %;
-    }
-*/
-
-    .cart_table thead th:nth-of-type(4) {
-        width: 10%;
-    }
-
-    .cart_table thead th:nth-of-type(5) {
-        width: 20%;
-    }
-
     .cart_table tbody {}
 
     .cart_table tbody tr {}
@@ -931,40 +931,29 @@ footer {
     .cart_table tbody tr td:nth-of-type(1) input {
         width: 100%;
     }
-
+    .cart_table tbody td:nth-of-type(1) img{
+        width: 100%;
+    }
+    
     .cart_table tbody td:nth-of-type(2) {
-        display: block;
-        align-items: center;
-        justify-content: center;
+        text-overflow: ellipsis;
+        line-height: 1.5;
     }
 
     .cart_table tbody td:nth-of-type(3) {
-        text-overflow: ellipsis;
-        line-height: 1.5;
+        text-align: center;
     }
 
     .cart_table tbody td:nth-of-type(4) {
         text-align: center;
     }
 
-    .cart_table tbody td:nth-of-type(5) {
-        text-align: center;
-    }
-
     .total {
-        display: flex;
-    }
-
-    .total span {}
-
-    .total span:nth-of-type(1) {
-        margin-left: 60%;
+        /* display: flex; */
     }
 
     .tab > a {
-        width: auto;
-        font-size: 14px;
-        padding: 10px;
+        font-size: 16px;   
     }
 
     .tab > a:hover {

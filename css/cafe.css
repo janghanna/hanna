@@ -157,6 +157,7 @@ header {
 
 .main .m1 img {
     width: 45%;
+    height: 100%;
 }
 
 .main .m1 article {
@@ -183,7 +184,7 @@ header {
     padding-top: 15px;
     line-height: 1;
     white-space: pre-line;
-    font-size: 16px;
+    font-size: 15px;
 
 }
 
@@ -203,11 +204,12 @@ header {
     display: flex;
     align-items: center;
     padding-right: 55px;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .main .m2 img {
     width: 45%;
+    height: 100%;
 }
 
 .main .m3 {
@@ -231,7 +233,7 @@ header {
     display: flex;
     align-items: center;
     padding-left: 55px;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 /**********풋터**********/

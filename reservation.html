@@ -34,6 +34,7 @@
 
     <main>
         <div class="re">
+            <p><img src="img/1.jpg"></p>
             <div class="tab">
                 <div class="tab-body">
                     <p><img src="img/gallery/2.jpg"></p>
@@ -50,11 +51,6 @@
             <form name="form_1">
                 <table>
                     <tbody>
-
-                        <!--
-                    <col width="120">
-                    <col width="*">
--->
                         <tr>
                             <th>방문 예정일 선택</th>
                             <td>
@@ -74,26 +70,26 @@
                         <tr>
                             <th>케이크 사이즈</th>
                             <td>
-                                <input type="radio" name="size" id="size1" value="11000"> <label for="size1"> 미니 (11,000원) </label>
-                                <input type="radio" name="size" id="size2" value="24000"> <label for="size2"> 1호 (24,000원) </label>
+                                <input type="checkbox" name="size" id="size1" value="11000"> <label for="size1"> 미니 (11,000원) </label>
+                                <input type="checkbox" name="size" id="size2" value="24000"> <label for="size2"> 1호 (24,000원) </label>
                             </td>
 
                         </tr>
                         <tr>
                             <th>케이크 모양</th>
                             <td>
-                                <input type="radio" name="shape" id="shape1" value="0"> <label for="shape1"> 원형 (+0원) </label>
+                                <input type="checkbox" name="shape" id="shape1" value="0"> <label for="shape1"> 원형 (+0원) </label>
 
-                                <input type="radio" name="shape" id="shape2" value="4000"> <label for="shape2"> 하트 (+4,000원) </label>
+                                <input type="checkbox" name="shape" id="shape2" value="4000"> <label for="shape2"> 하트 (+4,000원) </label>
                             </td>
                         </tr>
                         <tr>
                             <th>케이크 시트 맛</th>
                             <td>
-                                <input type="radio" name="sheet" id="sheet1" value="100"><label for="sheet1"> 바닐라(기본) </label>
-                                <input type="radio" name="sheet" id="sheet2" value="200"><label for="sheet2"> 초코 </label>
-                                <input type="radio" name="sheet" id="sheet3" value="0"><label for="sheet3"> 오레오 </label>
-                                <input type="radio" name="sheet" id="sheet4" value="0"><label for="sheet4"> 얼그레이 </label>
+                                <input type="checkbox" name="sheet" id="sheet1" value="0"><label for="sheet1"> 바닐라(기본) </label>
+                                <input type="checkbox" name="sheet" id="sheet2" value="0"><label for="sheet2"> 초코 </label>
+                                <input type="checkbox" name="sheet" id="sheet3" value="0"><label for="sheet3"> 오레오 </label>
+                                <input type="checkbox" name="sheet" id="sheet4" value="0"><label for="sheet4"> 얼그레이 </label>
                             </td>
                         </tr>
                         <tr>
@@ -111,16 +107,17 @@
                         </tr>
                         <tr>
                             <th>추가옵션<br>
-                                <small>(전체 색상변경 ＆ 생크림 모양)</small>
+                                <small>(겉면 색상변경 ＆ 생크림 모양)</small>
                             </th>
                             <td>
-                                <input type="radio" name="option" id="option1" value="0"><label for="option1"> 색상변경 (요청사항 메모) </label>
-                                <input type="radio" name="option" id="option2" value="0"><label for="option2"> 추가옵션X </label>
+                                <input type="checkbox" name="option" id="option1" value="4000"><label for="option1"> 색상변경 (+4000원 / 요청사항 메모) </label>
+                                <input type="checkbox" name="option" id="option2" value="0"><label for="option2"> 추가옵션X </label>
                             </td>
                         </tr>
                         <tr>
                             <th>요청사항</th>
-                            <td><textarea rows="5" cols="50" required placeholder=" 내용을 입력해주세요."></textarea></td>
+                            <td><textarea rows="5" cols="50" required placeholder="색상변경의 경우 겉면에 크림치즈가 발립니다. 
+디자인적인 부분은 최대한 자세히 적어주세요."></textarea></td>
                         </tr>
 
                     </tbody>
@@ -136,7 +133,7 @@
                         </tr> 
                         <tr>
                             <th>총 결제금액</th>
-                            <td><input type="text" name="sum4" size="11" readonly>원</td>
+                            <td><input type="text" name="sum3" size="11" readonly>원</td>
                         </tr>
                     </tfoot>
                 </table>

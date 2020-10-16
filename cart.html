@@ -12,10 +12,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/head_foot.js"></script>
+    <script src="js/cart.js"></script>
 </head>
 
 <body>
-
+ 
     <!-----헤더고정----->
     <header></header>
     <script></script>
@@ -40,51 +41,55 @@
                 <h2>장바구니</h2>
                 <div class="tab">
                     <div>
-
                         <label>
-                            <input type="checkbox" name="choice" value="choice">
+                            <input type="checkbox" id="allCheck" value="allCheck">
                             전체상품 선택
                         </label>
 
 
                         <span>
-                            1개 선택
+                            <input type="text" name="number" id="number" readonly="readonly"> 개 선택
                             <a href="">
                                 <img src="img/trash.png" alt="">
                             </a>
                         </span>
                     </div>
                     <table class="cart_table">
-
                         <thead>
                             <tr>
-                                <th></th>
-                                <th>상품정보</th>
+                                <th>상품</th>
                                 <th>옵션</th>
                                 <th>수량</th>
-                                <th>상품금액</th>
+                                <th>금액</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>
                                     <input type="checkbox" name="choice" value="choice">
-                                </td>
-                                <td>
+                                    <a>
                                     <img src="img/cake's/mini.jpg" alt="">
-                                    <a>하트 시트 케이크
-                                        33,000원</a>
-                                </td>
-                                <td>
-                                    <p>사이즈: 1호(24000원), 레터링: ♥생일축하해♥, 방문날짜: 2020-08-20 방문시간: am 11:00, 요청사항: 이쁘게 잘 만들어주세요!</p>
-                                </td>
-                                <td>
-                                    <p><input type="number" min="1" max="10" value="1">
-                                    </p>
+                                    주문케이크 33,000원</a>
                                 </td>
                                 <td>
                                     <p>
-                                        33,000원
+                                        방문예정일 : 2020-08-20<br> 방문시간 : 17시~18시<br>
+                                        사이즈 : 미니(11,000원)<br>모양 : 하트(+4,000원)<br>시트: 바닐라(기본)<br>생크림모양 : 쉘(+0원)<br>문구 : ♥생일축하해♥<br>요청사항 : 긴머리 여자가 머리위로 하트하고있는 그림 넣고 그 하트안에 문구 넣어주세요.(+4,000원)</p>
+                                </td>
+                                <td>
+                                    <p>                     <button class="pluse">
+                                        <img src="img/count+.png" >
+                                    </button>       
+                                        <input type="text" name="count" id="count" value="1" readonly>  
+                                         
+                                        <button class="minus">
+                                            <img src="img/count-.png" >
+                                        </button>
+                                    </p>
+                                </td>
+                                <td>
+                                    <P>
+                                        <input type="text" name="sum" id="num" readonly="readonly">원
                                     </p>
                                 </td>
                             </tr>
@@ -92,8 +97,8 @@
                     </table>
                     <div class="total">
                        <span></span>
-                        <span>총 결제금액</span>
-                        <span>33,000원</span>
+                        <span>총 주문금액</span>
+                        <span><input type="text" id="total_amount" readonly="readonly">원</span>
                     </div>
                     <a href="pay.html">주문하기</a>
                 </div>
