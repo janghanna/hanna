@@ -1,111 +1,5 @@
 @import url('common-hn.css');
 
-header {
-    height: 100%;
-    background-color: white;
-
-}
-
-.hailli {
-    width: 100%;
-    margin: 0 auto;
-    padding: 10% auto;
-    overflow: hidden;
-
-}
-
-.hailli h1 {
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    font-size: 50px;
-    letter-spacing: 3px;
-    color: #333333;
-    padding: 2.5%;
-}
-
-.gnb {
-    float: right;
-    display: inline-block;
-    padding: 0 40px;
-    font-size: 15px;
-
-}
-
-.gnb a {
-    width: 1080px;
-    padding: 0 30px;
-    color: #333333;
-}
-
-.gnb a.active {
-    background: #ad74ce;
-    text-decoration-line: underline;
-}
-
-.hailli nav {
-    width: 100%;
-    background: #333;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    line-height: 3;
-    font-size: 20px;
-    word-spacing: 200px;
-}
-
-.hailli nav a {
-    color: white;
-}
-
-.hailli nav a.active {
-    background: #ad74ce;
-    text-decoration: underline;
-}
-
-/**********버거**********/
-.menu-trigger {
-    width: 20px;
-    height: 20px;
-    position: fixed;
-    transition: .5s;
-    right: 5vw;
-    top: 5vw;
-    display: none;
-}
-
-.menu-trigger span {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: #ad74ce;
-}
-
-.menu-trigger.active span {
-    background-color: white;
-}
-
-.munu-trigger.active {
-    transform: rotate(90deg);
-}
-
-.menu-trigger span:nth-of-type(1) {
-    top: 0;
-}
-
-.menu-trigger span:nth-of-type(2) {
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-.menu-trigger span:nth-of-type(3) {
-    bottom: 0%;
-}
-
-
-
 main {
     margin: 0 auto;
     width: 70%;
@@ -114,7 +8,7 @@ main {
 .member {
     width: 100%;
     display: flex;
-    
+
 }
 
 .menu {
@@ -122,7 +16,7 @@ main {
     padding: 50px 0px;
     text-align: right;
     width: 20%;
-    min-height:66vh;
+    min-height: 66vh;
 }
 
 .menu h1 {
@@ -180,7 +74,7 @@ main {
 }
 
 .tab div label {
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .tab div label input {
@@ -189,9 +83,11 @@ main {
     background: #ededed;
 }
 
-.tab div span input{
+.tab div span input {
+    width: 20%;
     border: none;
 }
+
 
 .tab div span a {
     background: none;
@@ -262,10 +158,10 @@ main {
 }
 
 .cart_table tbody td p input {
-    border: 1px solid #ededed;
+    border: none;
     padding: 10px;
     border-radius: 10px;
-    width: 100%;
+
     outline: none;
     cursor: pointer;
 
@@ -281,45 +177,61 @@ main {
     text-overflow: ellipsis;
     line-height: 1.5;
 }
-.cart_table tbody td:nth-of-type(3) p input{
+
+.cart_table tbody td:nth-of-type(3) p input:nth-of-type(3) {
     width: 100%;
     text-align: center;
-    
-}
-.cart_table tbody td:nth-of-type(3) p {
-    width: 100%;  
+    border: none;
 }
 
-.cart_table tbody td:nth-of-type(3) p .pluse{
-    width:100%;
-    background: none;
-    border: none;    
+.cart_table tbody td:nth-of-type(3) p {
+    width: 100%;
 }
-.cart_table tbody td:nth-of-type(3) p .minus{
+
+.cart_table tbody td:nth-of-type(3) p input:nth-of-type(1) {
+    width: 100%;
+    background: none;
+}
+
+.cart_table tbody td:nth-of-type(3) p input:nth-of-type(4) {
     width: 100%;
     background: none;
     border: none;
 }
+
+/*
 .cart_table tbody td:nth-of-type(3) p img{
     width: 50%;
     padding: 0;
 }
+*/
 
-.cart_table tbody td:nth-of-type(4) p input{
+.cart_table tbody td:nth-of-type(4) p input {
     width: 80%;
+    text-align: right;
     border: none;
 }
 
 .total {
-    display: flex;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.total span input{
-    border: none;
+.total > span:nth-of-type(2) > input {
+    width: 100px;
+    font-size: 16px;
+    text-align: right;
+    border-bottom: 1px solid #ededed;
 }
 
 .total span:nth-of-type(1) {
-    margin-left: 60%;
+    font-size: 15px;
+    width: 50%;
+}
+
+.total span:nth-of-type(2) {
+    font-size: 16px;
+    width: 50%;
 }
 
 .tab > a {
@@ -334,46 +246,6 @@ main {
 
 .tab > a:hover {
     background: #8953A8;
-}
-
-/**********풋터**********/
-footer {
-    width: 100%;
-    padding: 1%;
-    background-color: #333333;
-}
-
-.h_f {
-    width: 60%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.h_f p {
-    white-space: pre-line;
-    text-align: left;
-    color: #777777;
-    font-size: 15px;
-    line-height: 1.5;
-}
-
-.h_f div {
-    padding: 20px 0;
-    position: relative;
-}
-
-.h_f div a {}
-
-.h_f div a:nth-of-type(1) {}
-
-.h_f div a:nth-of-type(2) {}
-
-.h_f > div > p > a > img {
-    position: absolute;
-    margin-top: 0%;
-    left: -50%;
-    bottom: 0%;
 }
 
 @media (max-width:992px) {
@@ -397,89 +269,7 @@ footer {
 }
 
 /*---------모바일 480----------*/
-
-
 @media (max-width:480px) {
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    header .hailli {}
-
-    header .hailli .gnb {
-        float: left;
-        padding: 10px;
-        font-size: 10px;
-    }
-
-    header .hailli .gnb a {
-        padding: 0 10px;
-    }
-
-    header .hailli .gnb a.active {
-        background: #ad74ce;
-        text-decoration-line: underline;
-    }
-
-    header .hailli h1 {
-        font-size: 2em;
-        clear: both;
-    }
-
-    header .haiili nav {
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 100%;
-        background: rgb(105, 105, 105, 0.9);
-
-        width: 20%;
-        display: block;
-        text-align: center;
-        transform: translateX(100%);
-        transition: .5s;
-        z-index: 1;
-    }
-
-    header .haiili nav.active {
-        transform: translateX(0%);
-    }
-
-    header .hailli nav a {
-        height: 10%;
-        font-size: 12px;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    header .hailli nav a.active {
-        background: #ad74ce;
-        text-decoration: underline;
-    }
-
-    .menu-trigger {
-        display: block;
-        z-index: 2;
-
-        width: 20px;
-        height: 20px;
-        position: fixed;
-        transition: .5s;
-        right: 5vw;
-        top: 5vw;
-    }
-
-    .menu-trigger span {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background: #ad74ce;
-    }
 
     main {
         width: 100%;
@@ -509,7 +299,7 @@ footer {
 
     .menu ul li a {
         display: block;
-        font-size: 14px;
+        font-size: 12px;
         padding: 15px 10px;
         position: relative;
         color: #666;
@@ -531,7 +321,6 @@ footer {
 
     .cart {
         padding: 0;
-        width:75%;
 
     }
 
@@ -551,19 +340,21 @@ footer {
         padding: 5px 10px;
     }
 
-    .tab div label {
-        font-size: 12px;
-    }
-
-    .tab div label input {
+    .tab > div > label > input {
         display: inline-block;
         border-radius: 100%;
         background: #ededed;
     }
 
     .tab div span {
-        font-size: 12px;
+        width: 50%;
     }
+
+    .tab > div > span > input {
+        width: 30%;
+        font-size: 14px;
+    }
+
     .tab div span a {
         background: none;
         border: none;
@@ -571,7 +362,6 @@ footer {
         cursor: pointer;
         vertical-align: middle;
     }
-
 
     .cart_table {
         border-spacing: 0;
@@ -581,23 +371,27 @@ footer {
     }
 
     .cart_table thead {
-        display: none;    
-        }
+        display: none;
+    }
 
-    .cart_table tr{
-        display:block; 
+    .cart_table tr {
+        display: block;
         border-top: double;
         border-bottom: double;
         border-color: #ededed;
     }
 
-    .cart_table th, td{display: block;}
+    .cart_table th,
+    td {
+        display: block;
+    }
 
     .cart_table tbody {
         width: 100%;
     }
+
     .cart_table tbody td {
-        border-bottom:1px solid #ededed;
+        border-bottom: 1px solid #ededed;
         text-align: left;
     }
 
@@ -633,154 +427,73 @@ footer {
     .cart_table tbody tr td:nth-of-type(1) input {
         display: block;
     }
-    .cart_table tbody tr td:nth-of-type(1){
-        
-    }
-    .cart_table tbody td:nth-of-type(2) p{
+
+    .cart_table tbody tr td:nth-of-type(1) {}
+
+    .cart_table tbody td:nth-of-type(2) p {
         text-overflow: ellipsis;
         line-height: 1.5;
         font-size: 14px;
-        
+
     }
 
     .cart_table tbody td:nth-of-type(3) {
-      width: 100%;
-      text-align: center;
+        width: 100%;
+        text-align: center;
     }
-    .cart_table tbody td:nth-of-type(3) p{
+
+    .cart_table tbody td:nth-of-type(3) p {
         width: 100%;
         margin: 0 auto;
     }
-    .cart_table tbody td:nth-of-type(3) p input{
-       width: 30%; 
-       font-size: 15px;
+
+    .cart_table tbody td:nth-of-type(3) p input:nth-of-type(3) {
+        width: 50%;
+        font-size: 15px;
     }
-    .cart_table tbody td:nth-of-type(3) p img{
-        width: 10%;
+
+    .cart_table tbody td:nth-of-type(3) p input:nth-of-type(1) {
+        width: 50%;
+        background: none;
+        border: none;
     }
-    .cart_table tbody td:nth-of-type(4){
+
+    .cart_table tbody td:nth-of-type(3) p input:nth-of-type(4) {
+        width: 50%;
+        background: none;
+        border: none;
+    }
+
+    .cart_table tbody td:nth-of-type(4) {
         width: 100%;
-        
+
     }
 
     .total {
-        border-bottom: 1px solid #ededed;
         margin: 10% 0;
     }
 
-    .total span:nth-of-type(1) {
-       display: none;
+    .total > span:nth-of-type(2) input {
+        width: 100px;
     }
 
-    .total span:nth-of-type(2){
+    .total > span:nth-of-type(1) {
+        width: 50%;
         font-size: 15px;
     }
-    .total span:nth-of-type(3){
+
+    .total > span:nth-of-type(2) {
+        width: 50%;
         font-size: 15px;
     }
+
     .tab > a:hover {
         background: #8953A8;
     }
-
-
-    .footer {}
-
-    .h_f {}
-
-    .h_f p {
-        font-size: 14px;
-    }
-
-    .h_f div {}
 }
 
-
 /*---------모바일 765~1080----------*/
-
-
 @media (min-width:765px) and (max-width:1080px) {
-    header {
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    header .hailli {}
-
-    header .hailli .gnb {
-        float: left;
-        padding: 10px;
-        font-size: 15px;
-    }
-
-    header .hailli .gnb a {
-        padding: 0 10px;
-    }
-
-    header .hailli .gnb a.active {
-        background: #ad74ce;
-        text-decoration-line: underline;
-    }
-
-    header .hailli h1 {
-        font-size: 3em;
-        clear: both;
-    }
-
-    header .hailli nav {
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 100%;
-        background: rgb(105, 105, 105, 0.9);
-
-        width: 20%;
-        display: block;
-        text-align: center;
-        transform: translateX(100%);
-        transition: .5s;
-        z-index: 1;
-    }
-
-    header .hailli nav.active {
-        transform: translateX(0%);
-    }
-
-    header .hailli nav a {
-        height: 10%;
-        font-size: 20px;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .hailli nav a.active {
-        background: #ad74ce;
-        text-decoration: underline;
-    }
-
-    .menu-trigger {
-        display: block;
-        z-index: 2;
-
-        width: 30px;
-        height: 20px;
-        position: fixed;
-        transition: .5s;
-        right: 5vw;
-        top: 5vw;
-    }
-
-    .menu-trigger span {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background: #ad74ce;
-    }
-
     main {
         width: 100%;
     }
@@ -795,7 +508,7 @@ footer {
         background: #ededed;
         padding: 50px 0px;
         text-align: right;
-        width: 15%;
+
     }
 
     .menu h1 {
@@ -832,12 +545,12 @@ footer {
 
     .cart {
         padding: 0;
-        width: 85%;
+
     }
 
     .cart h2 {
-
-        margin-bottom: 30px;
+        font-size: 30px;
+        margin-bottom: 35px;
         text-align: center;
     }
 
@@ -851,18 +564,19 @@ footer {
         padding: 5px 10px;
     }
 
-    .tab div label {
-        font-size: 14px;
-    }
-
-    .tab div label input {
+    .tab > div > label > input {
         display: inline-block;
         border-radius: 100%;
         background: #ededed;
     }
 
     .tab div span {
-        font-size: 14px;
+        width: 50%;
+    }
+
+    .tab > div > span > input {
+        width: 40%;
+        font-size: 16px;
     }
 
     .tab div span a {
@@ -882,7 +596,12 @@ footer {
 
     .cart_table thead {}
 
-    .cart_table thead tr {}
+    .cart_table thead tr {
+
+        border-top: double;
+        border-bottom: double;
+        border-color: #ededed;
+    }
 
     .cart_table thead th {
         background: #ededed;
@@ -891,6 +610,7 @@ footer {
         padding: 12px;
         text-align: center;
     }
+
     .cart_table tbody {}
 
     .cart_table tbody tr {}
@@ -929,23 +649,55 @@ footer {
 
     }
 
+    .cart_table tbody tr td:nth-of-type(1) {
+        width: 30%;
+    }
+
     .cart_table tbody tr td:nth-of-type(1) input {
         width: 100%;
     }
-    .cart_table tbody td:nth-of-type(1) img{
+
+    .cart_table tbody td:nth-of-type(1) img {
         width: 100%;
     }
-    
+
     .cart_table tbody td:nth-of-type(2) {
         text-overflow: ellipsis;
         line-height: 1.5;
     }
 
     .cart_table tbody td:nth-of-type(3) {
+        width: 15%;
         text-align: center;
     }
 
+    .cart_table tbody td:nth-of-type(3) p input:nth-of-type(3) {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .cart_table tbody td:nth-of-type(3) p input:nth-of-type(1) {
+        width: 50%;
+        background: none;
+        border: none;
+    }
+
+    .cart_table tbody td:nth-of-type(3) p input:nth-of-type(4) {
+        width: 50%;
+        background: none;
+        border: none;
+    }
+
+    .cart_table tbody td:nth-of-type(3) p img {
+        width: 20%;
+    }
+
+    .cart_table tbody td:nth-of-type(4) input {
+        width: 100px;
+    }
+
     .cart_table tbody td:nth-of-type(4) {
+        width: 15%;
         text-align: center;
     }
 
@@ -954,21 +706,10 @@ footer {
     }
 
     .tab > a {
-        font-size: 16px;   
+        font-size: 16px;
     }
 
     .tab > a:hover {
         background: #8953A8;
     }
-
-
-    .footer {}
-
-    .h_f {}
-
-    .h_f p {
-        font-size: 14px;
-    }
-
-    .h_f div {}
 }

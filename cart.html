@@ -8,15 +8,15 @@
     <title>Cafe__HAILLI</title>
     <link rel="stylesheet" href="css/cart.css" type="text/css">
     <link rel="icon" href="img/cake.png">
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/head_foot.js"></script>
-    <script src="js/cart.js"></script>
+    <!--    <script src="js/cart.js"></script>-->
+    <script src="js/checkbox.js"></script>
 </head>
 
 <body>
- 
     <!-----헤더고정----->
     <header></header>
     <script></script>
@@ -36,78 +36,73 @@
                     </li>
                 </ul>
             </div>
-
-            <div class="cart">
-                <h2>장바구니</h2>
-                <div class="tab">
-                    <div>
-                        <label>
-                            <input type="checkbox" id="allCheck" value="allCheck">
-                            전체상품 선택
-                        </label>
-
-
-                        <span>
-                            <input type="text" name="number" id="number" readonly="readonly"> 개 선택
-                            <a href="">
-                                <img src="img/trash.png" alt="">
-                            </a>
-                        </span>
+            <form name="form">
+                <div class="cart">
+                    <h2>장바구니</h2>
+                    <div class="tab">
+                        <div>
+                            <label>
+                                <input type="checkbox" id="allCheck" value="allCheck">
+                                전체상품 선택
+                            </label>
+                            <span>
+                                <input type="text" name="del" id="del" readonly="readonly">개 선택
+                                <a href="">
+                                    <img src="img/trash.png" alt="">
+                                </a>
+                            </span>
+                        </div>
+                        <table class="cart_table">
+                            <thead>
+                                <tr>
+                                    <th>상품</th>
+                                    <th>옵션</th>
+                                    <th>수량</th>
+                                    <th>금액</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="choice" value="choice">
+                                        <a>
+                                            <img src="img/cake's/mini.jpg" alt="">
+                                            주문케이크 19,000원</a>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            방문예정일 : 2020-08-20<br> 방문시간 : 17시~18시<br>
+                                            사이즈 : 미니(11,000원)<br>모양 : 하트(+4,000원)<br>시트: 바닐라(기본)<br>생크림모양 : 쉘(+0원)<br>문구 : ♥생일축하해♥<br>요청사항 : 긴머리 여자가 머리위로 하트하고있는 그림 넣고 그 하트안에 문구 넣어주세요.(+4,000원)</p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            <input type="button" naem="+" value=" + " >
+                                            <input type="hidden" name="count" value="19000">
+                                            <input type="number" name="count_price" id="amount" value="1">
+                                            <input type="button" name="-" value=" - " >
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <P>
+                                            <input type="text" name="item_price" id="total_count" value="19000" readonly="readonly"> 원
+                                        </P>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="total">
+                            <span>총 주문금액</span>
+                            <span><input type="text" name="total_price" id="total_count_view" value="19000" readonly="readonly">원</span>
+                        </div>
+                        <a href="pay.html">주문하기</a>
                     </div>
-                    <table class="cart_table">
-                        <thead>
-                            <tr>
-                                <th>상품</th>
-                                <th>옵션</th>
-                                <th>수량</th>
-                                <th>금액</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <input type="checkbox" name="choice" value="choice">
-                                    <a>
-                                    <img src="img/cake's/mini.jpg" alt="">
-                                    주문케이크 33,000원</a>
-                                </td>
-                                <td>
-                                    <p>
-                                        방문예정일 : 2020-08-20<br> 방문시간 : 17시~18시<br>
-                                        사이즈 : 미니(11,000원)<br>모양 : 하트(+4,000원)<br>시트: 바닐라(기본)<br>생크림모양 : 쉘(+0원)<br>문구 : ♥생일축하해♥<br>요청사항 : 긴머리 여자가 머리위로 하트하고있는 그림 넣고 그 하트안에 문구 넣어주세요.(+4,000원)</p>
-                                </td>
-                                <td>
-                                    <p>                     <button class="pluse">
-                                        <img src="img/count+.png" >
-                                    </button>       
-                                        <input type="text" name="count" id="count" value="1" readonly>  
-                                         
-                                        <button class="minus">
-                                            <img src="img/count-.png" >
-                                        </button>
-                                    </p>
-                                </td>
-                                <td>
-                                    <P>
-                                        <input type="text" name="sum" id="num" readonly="readonly">원
-                                    </p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="total">
-                       <span></span>
-                        <span>총 주문금액</span>
-                        <span><input type="text" id="total_amount" readonly="readonly">원</span>
-                    </div>
-                    <a href="pay.html">주문하기</a>
                 </div>
-            </div>
+            </form>
         </div>
     </main>
 
     <!-----풋바고정----->
-     <footer></footer>
+    <footer></footer>
     <!-----풋바 끝----->
 
 </body></html>

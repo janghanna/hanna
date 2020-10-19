@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <title>Insert title here</title> 
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.js"></script> 
+        <script>
+            $(function change(num){
+                var x = document.form;
+                var y = Number(count.value)+num;
+                if(y < 1) y = 1;
+                x.count,value = y;
+            });
+        </script> 
+    </head> 
+         <body> 
+             <form name="joinForm">
+                 <table>
+                     <tr>
+                         <td>수량</td>
+                     </tr>
+
+                     <tr>
+                         <td><input type="text" name="count" value="1"></td>
+                         <td><a href="#" onclick="change(1);">▲</a>
+                        <a href="#" onclick="change(-1);">▼</a></td>
+                     </tr>
+                 </table>
+             </form>
+        </body> 
+</html>

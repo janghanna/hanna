@@ -25,28 +25,11 @@
     <main>
         <div class="pay">
             <article class="goods">
-                <h2>01. 주문상품</h2>
+                
                 <div class="goods_tab">
-                    <div>
-
-                        <label>
-                            <input type="checkbox" name="choice" value="choice">
-                            전체상품 선택
-                        </label>
-
-
-                        <span>
-                            1개 선택
-                            <a href="">
-                                <img src="img/trash.png" alt="">
-                            </a>
-                        </span>
-                    </div>
                     <table class="goods_table">
-
                         <thead>
                             <tr>
-                                <th></th>
                                 <th>상품정보</th>
                                 <th>옵션</th>
                                 <th>수량</th>
@@ -56,18 +39,17 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <input type="checkbox" name="choice" value="choice">
-                                </td>
-                                <td>
                                     <img src="img/cake's/mini.jpg" alt="">
-                                    <a href="">하트 시트 케이크
+                                    <a href="">주문 케이크
                                         33,000원</a>
                                 </td>
                                 <td>
-                                    <p>사이즈: 1호(24000원), 레터링: ♥생일 축하해♥, 방문날짜: 2020-08-20 방문시간: am 11:00, 요청사항: 이쁘게 잘 만들어주세요!</p>
+                                    <p>방문예정일 : 2020-08-20<br> 방문시간 : 17시~18시<br>
+                                        사이즈 : 미니(11,000원)<br>모양 : 하트(+4,000원)<br>시트: 바닐라(기본)<br>생크림모양 : 쉘(+0원)<br>문구 : ♥생일축하해♥<br>요청사항 : 긴머리 여자가 머리위로 하트하고있는 그림 넣고 그 하트안에 문구 넣어주세요.(+4,000원)</p>
                                 </td>
                                 <td>
-                                    <p><input type="number" min="1" max="10" value="1">
+                                    <p>
+                                        <input type="number" readonly="readonly" value="1"> 
                                     </p>
                                 </td>
                                 <td>
@@ -83,7 +65,7 @@
 
             <!--            주문자 정보-->
             <article class="user_info">
-                <h3>02. 주문자 정보</h3>
+                <h3>주문자 정보</h3>
                 <form action="#">
                     <div class="user">
                         <ul>
@@ -105,7 +87,7 @@
 
             <!--                결제하기-->
             <article class="good_pay">
-                <h4>03. 결제하기</h4>
+                <h4>결제하기</h4>
 
                 <ul>
                     <li>
@@ -126,7 +108,7 @@
 
             <!--                결제수단-->
             <article class="pay_select">
-                <h5>04. 결제수단</h5>
+                <h5>결제수단</h5>
                 <div class="pay_option">
                     <label>
                         신용카드

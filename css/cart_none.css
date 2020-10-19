@@ -1,116 +1,12 @@
 @import url('common-hn.css');
-
-header {
-    height: 100%;
-    background-color: white;
-
-}
-
-.hailli {
-    width: 100%;
-    margin: 0 auto;
-    padding: 10% auto;
-    overflow: hidden;
-
-}
-
-.hailli h1 {
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    font-size: 50px;
-    letter-spacing: 3px;
-    color: #333333;
-    padding: 2.5%;
-}
-
-.gnb {
-    float: right;
-    display: inline-block;
-    padding: 0 40px;
-    font-size: 15px;
-
-}
-
-.gnb a {
-    width: 1080px;
-    padding: 0 30px;
-    color: #333333;
-}
-
-.gnb a.active {
-    background: #ad74ce;
-    text-decoration-line: underline;
-}
-
-.hailli nav {
-    width: 100%;
-    background: #333;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    line-height: 3;
-    font-size: 20px;
-    word-spacing: 200px;
-}
-
-.hailli nav a {
-    color: white;
-}
-
-.hailli nav a.active {
-    background: #ad74ce;
-    text-decoration: underline;
-}
-
-/**********버거**********/
-.menu-trigger {
-    width: 20px;
-    height: 20px;
-    position: fixed;
-    transition: .5s;
-    right: 5vw;
-    top: 5vw;
-    display: none;
-}
-
-.menu-trigger span {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: #ad74ce;
-}
-
-.menu-trigger.active span {
-    background-color: white;
-}
-
-.munu-trigger.active {
-    transform: rotate(90deg);
-}
-
-.menu-trigger span:nth-of-type(1) {
-    top: 0;
-}
-
-.menu-trigger span:nth-of-type(2) {
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-.menu-trigger span:nth-of-type(3) {
-    bottom: 0%;
-}
-
 main {
     margin: 0 auto;
     width: 70%;
 }
 
 .member {
-    display: flex;   
+    display: flex;  
+    width: 100%;
 }
 
 .menu {
@@ -189,39 +85,6 @@ main {
     background: #8953A8;
 }
 
-/**********풋터**********/
-footer {
-    width: 100%;
-    padding: 1%;
-    background-color: #333333;
-}
-
-.h_f {
-    width: 60%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.h_f p {
-    white-space: pre-line;
-    text-align: left;
-    color: #777777;
-    font-size: 15px;
-    line-height: 1.5;
-}
-
-.h_f div {
-    padding: 20px 0;
-}
-
-.h_f div a {}
-
-.h_f div a:nth-of-type(1) {}
-
-.h_f div a:nth-of-type(2) {}
-
-
 @media (max-width:992px) {
     .menu {
         background: #ededed;
@@ -244,91 +107,7 @@ footer {
 
 
 /*---------모바일 480----------*/
-
-
 @media (max-width:480px) {
-    header {
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    header .hailli {}
-
-    header .hailli .gnb {
-        float: left;
-        padding: 10px;
-        font-size: 10px;
-    }
-
-    header .hailli .gnb a {
-        padding: 0 10px;
-    }
-
-    header .hailli .gnb a.active {
-        background: #ad74ce;
-        text-decoration-line: underline;
-    }
-
-    header .hailli h1 {
-        font-size: 2em;
-        clear: both;
-    }
-
-    header .haiili nav {
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 100%;
-        background: rgb(105, 105, 105, 0.9);
-
-        width: 20%;
-        display: block;
-        text-align: center;
-        transform: translateX(100%);
-        transition: .5s;
-        z-index: 1;
-    }
-
-    header .haiili nav.active {
-        transform: translateX(0%);
-    }
-
-    header .hailli nav a {
-        height: 10%;
-        font-size: 12px;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    header .hailli nav a.active {
-        background: #ad74ce;
-        text-decoration: underline;
-    }
-
-    .menu-trigger {
-        display: block;
-        z-index: 2;
-
-        width: 20px;
-        height: 20px;
-        position: fixed;
-        transition: .5s;
-        right: 5vw;
-        top: 5vw;
-    }
-
-    .menu-trigger span {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background: #ad74ce;
-    }
-
     main {
         width: 100%;
     }
@@ -379,7 +158,6 @@ footer {
 
     .cart {
         padding: 0;
-        width: 75%;
     }
 
     .cart h2 {
@@ -409,106 +187,10 @@ footer {
     .tab a:hover {
         background: #8953A8;
     }
-
-
-    .footer {}
-
-    .h_f {}
-
-    .h_f p {
-        font-size: 14px;
-    }
-
-    .h_f div {}
 }
 
-
 /*---------모바일 765~1080----------*/
-
-
 @media (min-width:765px) and (max-width:1080px) {
-    header {
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    header .hailli {}
-
-    header .hailli .gnb {
-        float: left;
-        padding: 10px;
-        font-size: 15px;
-    }
-
-    header .hailli .gnb a {
-        padding: 0 10px;
-    }
-
-    header .hailli .gnb a.active {
-        background: #ad74ce;
-        text-decoration-line: underline;
-    }
-
-    header .hailli h1 {
-        font-size: 3em;
-        clear: both;
-    }
-
-    header .hailli nav {
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 100%;
-        background: rgb(105, 105, 105, 0.9);
-
-        width: 20%;
-        display: block;
-        text-align: center;
-        transform: translateX(100%);
-        transition: .5s;
-        z-index: 1;
-    }
-
-    header .hailli nav.active {
-        transform: translateX(0%);
-    }
-
-    header .hailli nav a {
-        height: 10%;
-        font-size: 20px;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .hailli nav a.active {
-        background: #ad74ce;
-        text-decoration: underline;
-    }
-
-    .menu-trigger {
-        display: block;
-        z-index: 2;
-
-        width: 30px;
-        height: 20px;
-        position: fixed;
-        transition: .5s;
-        right: 5vw;
-        top: 5vw;
-    }
-
-    .menu-trigger span {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background: #ad74ce;
-    }
-
     main {
         width: 100%;
     }
@@ -523,7 +205,7 @@ footer {
         background: #ededed;
         padding: 50px 0px;
         text-align: right;
-        width: 15%;
+   
     }
 
     .menu h1 {
@@ -560,11 +242,12 @@ footer {
 
     .cart {
         padding: 0;
-        width: 85%;
+       
     }
 
     .cart h2 {
-        margin-bottom: 30px;
+        font-size: 30px;
+        margin-bottom: 35px;
         text-align: center;
     }
 
@@ -589,15 +272,4 @@ footer {
     .tab a:hover {
         background: #8953A8;
     }
-
-
-    .footer {}
-
-    .h_f {}
-
-    .h_f p {
-        font-size: 14px;
-    }
-
-    .h_f div {}
 }

@@ -2,8 +2,7 @@
 
 main {
     margin: 0 auto;
-    width: 1080px;
-    height: 700px;
+    width: 70%;;
 }
 
 .member {
@@ -16,6 +15,7 @@ main {
     padding: 50px 0px;
     text-align: right;
     width: 20%;
+    min-height: 66vh;
 }
 
 .menu h1 {
@@ -24,7 +24,7 @@ main {
     padding-right: 10px;
 }
 
-.menu ul {}
+.menu ul {} 
 
 .menu ul li {}
 
@@ -67,6 +67,10 @@ main {
 .order_list span {
     padding: 5px 10px;
 }
+ .order_list span input{
+        width: 5%;
+     border: none;
+    }
 
 
 .order_table {
@@ -84,23 +88,22 @@ main {
     background: #ededed;
     color: #333;
     font-size: 15px;
+    text-align: center;
     padding: 12px;
 }
 
 .order_table thead th:nth-of-type(1) {
-    width: 2%;
+    width: 30%;
 }
 
 .order_table thead th:nth-of-type(2) {
-    width: 32%;
-}
-
-.order_table thead th:nth-of-type(3) {
     width: 40%;
 }
-
+.order_table thead th:nth-of-type(3){
+    width: 10%;
+}
 .order_table thead th:nth-of-type(4) {
-    width: 25%;
+    width: 20%;
 }
 
 .order_table tbody {}
@@ -121,12 +124,10 @@ main {
 
 .order_table tbody td a {
     font-size: 15px;
-    padding-left: 10px;
-    color: #333;
-    white-space: pre-line;
+    color: #333;    
 }
 
-order_table tbody td a small {
+.order_table tbody td a small {
     color: #666;
 }
 
@@ -141,21 +142,35 @@ order_table tbody td a small {
     width: 100%;
     outline: none;
     cursor: pointer;
-
 }
 
-.order_table tbody td:nth-of-type(2) {
-    display: flex;
+.order_table tbody td:nth-of-type(1) {
+    width: 30%;
+    text-align: center;
     align-items: center;
     justify-content: center;
 }
+.order_table tbody td:nth-of-type(1) img{
+    width: 100%;
+}
 
-.order_table tbody td:nth-of-type(3) {
+.order_table tbody td:nth-of-type(2) {
+    width: 40%;
     text-overflow: ellipsis;
     line-height: 1.5;
 }
+.order_table tbody td:nth-of-type(3){
+    width: 10%;
+}
+.order_table tbody td:nth-of-type(3) input{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    border: none;
+}
 
 .order_table tbody td:nth-of-type(4) {
+    width:20%;
     text-align: center;
 }
 
@@ -207,88 +222,6 @@ order_table tbody td a small {
 
 
 @media (max-width:480px) {
-    header {
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    header .hailli {}
-
-    header .hailli .gnb {
-        float: left;
-        padding: 10px;
-        font-size: 10px;
-    }
-
-    header .hailli .gnb a {
-        padding: 0 10px;
-    }
-
-    header .hailli .gnb a.active {
-        background: #ad74ce;
-        text-decoration-line: underline;
-    }
-
-    header .hailli h1 {
-        font-size: 2em;
-        clear: both;
-    }
-
-    header .haiili nav {
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 100%;
-        background: rgb(105, 105, 105, 0.9);
-
-        width: 20%;
-        display: block;
-        text-align: center;
-        transform: translateX(100%);
-        transition: .5s;
-        z-index: 1;
-    }
-
-    header .haiili nav.active {
-        transform: translateX(0%);
-    }
-
-    header .hailli nav a {
-        height: 10%;
-        font-size: 12px;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    header .hailli nav a.active {
-        background: #ad74ce;
-        text-decoration: underline;
-    }
-
-    .menu-trigger {
-        display: block;
-        z-index: 2;
-
-        width: 20px;
-        height: 20px;
-        position: fixed;
-        transition: .5s;
-        right: 5vw;
-        top: 5vw;
-    }
-
-    .menu-trigger span {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background: #ad74ce;
-    }
-
     main {
         width: 100%;
     }
@@ -303,11 +236,11 @@ order_table tbody td a small {
         background: #ededed;
         padding: 50px 0px;
         text-align: right;
-        width: 15%;
+      
     }
 
     .menu h1 {
-        font-size: 10px;
+        font-size: 16px;
         margin-bottom: 40px;
         padding-right: 10px;
     }
@@ -318,7 +251,7 @@ order_table tbody td a small {
 
     .menu ul li a {
         display: block;
-        font-size: 10px;
+        font-size: 12px;
         padding: 15px 10px;
         position: relative;
         color: #666;
@@ -341,11 +274,11 @@ order_table tbody td a small {
     .order {
         margin: none;
         padding: 0;
-        width: 85%;
+       
     }
 
-    .order h2 {
-        font-size: 15px;
+    .order h1 {
+        font-size: 16px;
         margin-bottom: 35px;
         text-align: center;
     }
@@ -355,7 +288,7 @@ order_table tbody td a small {
     }
 
     .order_list span {
-        font-size: 12px;
+        font-size: 14px;
         padding: 5px 10px;
     }
 
@@ -367,43 +300,25 @@ order_table tbody td a small {
         width: 100%;
     }
 
-    .order_table thead {}
-
-    .order_table thead tr {}
-
-    .order_table thead th {
-        background: #ededed;
-        color: #333;
-        font-size: 10px;
-        padding: 12px;
+    .order_table thead {
+        display: none;
     }
 
-    .order_table thead th:nth-of-type(1) {
-        width: 5%;
-    }
-
-    .order_table thead th:nth-of-type(2) {
-        width: 30%;
-    }
-
-    /*
-.order_table thead th:nth-of-type(3) {
-    width: 15%;
-}
-*/
-
-    .order_table thead th:nth-of-type(4) {
-        width: 25%;
-    }
-
-    .order_table tbody {}
-
-    .order_table tbody tr {}
-
-    .order_table tbody td {
+    .order_table tr {
+        display:block; 
+        border-top: double;
         border-bottom: double;
         border-color: #ededed;
-        text-align: left;
+    }
+    .order_table th, td{
+        display: block;
+    }
+    .order_table tbody {
+        width: 100%;
+    }
+    .order_table tbody td {
+     text-align: left;
+     border-bottom: 1px solid #ededed;
     }
 
     .order_table tbody td img {
@@ -412,44 +327,54 @@ order_table tbody td a small {
     }
 
     .order_table tbody td a {
-        font-size: 10px;
+        font-size: 15px;
+        text-align: center;
         padding: 0px;
         color: #333;
         white-space: pre-line;
+        line-height: 2;
     }
 
-    order_table tbody td a small {
+    .order_table tbody td a small {
         color: #666;
     }
 
     .order_table tbody td p {
-        font-size: 10px;
+        font-size: 15px;
     }
 
-    .order_table tbody td:nth-of-type(1) input {
+    .order_table tbody td:nth-of-type(1){
         width: 100%;
     }
 
     .order_table tbody td:nth-of-type(2) {
-        display: block;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .order_table tbody td:nth-of-type(3) {
+        width: 100%;
         text-overflow: ellipsis;
         line-height: 1.5;
     }
 
+    .order_table tbody td:nth-of-type(3) {
+        width: 100%;
+    }
+    .order_table tbody td:nth-of-type(3) input {
+        margin: 0 auto; 
+        width: 100%;
+        border: none;
+    }
+
     .order_table tbody td:nth-of-type(4) {
         text-align: center;
+        width: 100%;
     }
 
     .order_list > p {
         margin-top: 5px;
         text-align: right;
     }
-
+    .order_list span input{
+        width: 20%;
+        text-align: right;
+    }
     .order_list p select {
         border: 1px solid #ededed;
         border-radius: 10px;
@@ -482,91 +407,7 @@ order_table tbody td a small {
 
 
 /*---------모바일 765~1080----------*/
-
-
 @media (min-width:765px) and (max-width:1080px) {
-    header {
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    header .hailli {}
-
-    header .hailli .gnb {
-        float: left;
-        padding: 10px;
-        font-size: 15px;
-    }
-
-    header .hailli .gnb a {
-        padding: 0 10px;
-    }
-
-    header .hailli .gnb a.active {
-        background: #ad74ce;
-        text-decoration-line: underline;
-    }
-
-    header .hailli h1 {
-        font-size: 3em;
-        clear: both;
-    }
-
-    header .hailli nav {
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 100%;
-        background: rgb(105, 105, 105, 0.9);
-
-        width: 20%;
-        display: block;
-        text-align: center;
-        transform: translateX(100%);
-        transition: .5s;
-        z-index: 1;
-    }
-
-    header .hailli nav.active {
-        transform: translateX(0%);
-    }
-
-    header .hailli nav a {
-        height: 10%;
-        font-size: 20px;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .hailli nav a.active {
-        background: #ad74ce;
-        text-decoration: underline;
-    }
-
-    .menu-trigger {
-        display: block;
-        z-index: 2;
-
-        width: 30px;
-        height: 20px;
-        position: fixed;
-        transition: .5s;
-        right: 5vw;
-        top: 5vw;
-    }
-
-    .menu-trigger span {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background: #ad74ce;
-    }
-
     main {
         width: 100%;
     }
@@ -581,7 +422,7 @@ order_table tbody td a small {
         background: #ededed;
         padding: 50px 0px;
         text-align: right;
-        width: 15%;
+        
     }
 
     .menu h1 {
@@ -619,11 +460,11 @@ order_table tbody td a small {
     .order {
         margin: none;
         padding: 0;
-        width: 85%;
+       
     }
 
-    .order h2 {
-
+    .order h1 {
+        font-size: 30px;
         margin-bottom: 30px;
         text-align: center;
     }
@@ -636,7 +477,6 @@ order_table tbody td a small {
         font-size: 14px;
         padding: 5px 10px;
     }
-
 
     .order_table {
         border-spacing: 0;
@@ -656,21 +496,19 @@ order_table tbody td a small {
     }
 
     .order_table thead th:nth-of-type(1) {
-        width: 5%;
-    }
-
-    .order_table thead th:nth-of-type(2) {
         width: 30%;
     }
 
-    /*
-.order_table thead th:nth-of-type(3) {
-    width: 15%;
-}
-*/
+    .order_table thead th:nth-of-type(2) {
+        width: 40%;
+    }
+
+    .order_table thead th:nth-of-type(3) {
+        width: 10%;
+    }
 
     .order_table thead th:nth-of-type(4) {
-        width: 25%;
+        width: 20%;
     }
 
     .order_table tbody {}
@@ -705,22 +543,12 @@ order_table tbody td a small {
         font-size: 14px;
     }
 
-    .order_table tbody td:nth-of-type(1) input {
-        width: 100%;
-    }
-
     .order_table tbody td:nth-of-type(2) {
-        display: block;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .order_table tbody td:nth-of-type(3) {
         text-overflow: ellipsis;
         line-height: 1.5;
     }
 
-    .order_table tbody td:nth-of-type(4) {
+    .order_table tbody td:nth-of-type(3) {
         text-align: center;
     }
 
