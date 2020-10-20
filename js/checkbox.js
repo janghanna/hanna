@@ -7,15 +7,10 @@ $(function () {
         } else { //아니면 체크ㄴㄴ
             $("input[name=choice]").prop("checked", false);
         }
-    });
+    })
     //수량 count_price의 숫자가 바뀌면
     //수량에따른 금액 item_price 가 바뀐다.
     //총 주문금액 total_price 수량에따른금액 item_price의 총 합
-    
-    //
-    $('form').on('change', function(){
-       var  
-    });
     
 });
 // window.addEventListener('DOMContentLoaded', init);
