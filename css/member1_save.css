@@ -60,8 +60,7 @@ main {
     padding: 0 50px;
 }
 
-.info h2 {
-    font-size: 40px;
+.info h1 {
     margin-bottom: 35px;
     text-align: center;
 }
@@ -238,7 +237,7 @@ footer {
         padding: 0 ;
     }
 
-    .info h2 {
+    .info h1 {
         font-size:25px;
     }
 
@@ -348,7 +347,7 @@ footer {
         padding: 0;
     }
 
-    .info h2 {
+    .info h1 {
         font-size: 30px;
     }
 

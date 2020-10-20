@@ -56,8 +56,7 @@ main {
     width: 80%;
 }
 
-.order h2 {
-    font-size: 25px;
+.order h1 {
     margin-bottom: 35px;
     text-align: center;
 }
@@ -111,7 +110,7 @@ main {
 
 
 @media (max-width:480px) {
-        main {
+    main {
         width: 100%;
     }
 
@@ -164,7 +163,7 @@ main {
         padding: 0;
     }
 
-    .order h2{
+    .order h1{
         font-size: 25px;
         margin-bottom: 35px;
         text-align: center;
@@ -264,7 +263,7 @@ main {
         
     }
 
-    .order h2 {
+    .order h1 {
         margin-bottom: 35px;
         text-align: center;
         font-size: 30px;

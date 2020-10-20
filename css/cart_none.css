@@ -5,7 +5,7 @@ main {
 }
 
 .member {
-    display: flex;  
+    display: flex;   
     width: 100%;
 }
 
@@ -55,8 +55,7 @@ main {
     width: 80%;
 }
 
-.cart h2 {
-    font-size: 25px;
+.cart h1 {
     margin-bottom: 35px;
     text-align: center;
 }
@@ -160,7 +159,7 @@ main {
         padding: 0;
     }
 
-    .cart h2 {
+    .cart h1 {
         font-size: 25px;
         margin-bottom: 35px;
         text-align: center;
@@ -245,7 +244,7 @@ main {
        
     }
 
-    .cart h2 {
+    .cart h1 {
         font-size: 30px;
         margin-bottom: 35px;
         text-align: center;
