@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
 
 html,
 body {
@@ -32,11 +32,12 @@ a {
 /* *모든 태그를 포함한다. 표시는 다른 명령보다 쌤*/
 * {
     box-sizing: border-box;
+    font-family: 'Poor Story', cursive;
 }
 
 
 body {
-    font-family: 'THEBalsamtint', cursive;
+    font-family: 'Poor Story', cursive;
 }
 
 
